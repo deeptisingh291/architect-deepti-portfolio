@@ -98,18 +98,30 @@ body {
   color: var(--text-primary);
 }
 
-.theme-light .bg-\[\#0a0a0c\] {
+/* --------------------------------------------------------------------------
+   THEME ADAPTIVE CLASSES: ARCHITECTURAL LINEN & ALABASTER LIGHT THEME
+   -------------------------------------------------------------------------- */
+.theme-light body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Backgrounds */
+.theme-light .bg-\[\#0a0a0c\],
+.theme-light .bg-\[\#0a0a0c\]\/80,
+.theme-light .bg-\[\#0a0a0c\]\/90 {
   background-color: var(--bg-primary) !important;
+}
+
+.theme-light #navbar {
+  background-color: rgba(248, 246, 240, 0.94) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
 
 .theme-light .bg-\[\#121216\] {
   background-color: var(--bg-card) !important;
-  border-color: var(--border-subtle) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
-}
-
-.theme-light .bg-\[\#0e0e12\] {
-  background-color: var(--bg-secondary) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
 }
 
 .theme-light .bg-\[\#16161c\] {
@@ -117,7 +129,7 @@ body {
 }
 
 .theme-light .bg-\[\#141418\] {
-  background-color: #f2eee4 !important;
+  background-color: #ffffff !important;
 }
 
 .theme-light .bg-\[\#08080a\] {
@@ -125,6 +137,136 @@ body {
   color: #55555e !important;
 }
 
+/* HERO SECTION IN LIGHT THEME */
+.theme-light #hero {
+  background-color: var(--bg-primary) !important;
+}
+
+.theme-light #hero img[alt="Minimalist White Villa"] {
+  opacity: 0.15 !important;
+  filter: contrast(110%) brightness(105%) !important;
+}
+
+/* Override dark gradients in hero with warm architectural linen gradients */
+.theme-light #hero .bg-gradient-to-t {
+  background: linear-gradient(to top, #f8f6f0 0%, rgba(248, 246, 240, 0.88) 50%, rgba(248, 246, 240, 0.65) 100%) !important;
+}
+
+.theme-light #hero .bg-\[radial-gradient\(circle_at_center\,transparent_0\%\,\#0a0a0c_90\%\)\] {
+  background: radial-gradient(circle at center, transparent 0%, rgba(248, 246, 240, 0.94) 85%) !important;
+}
+
+.theme-light #hero .ambient-hero-glow {
+  background: radial-gradient(circle, rgba(158, 121, 73, 0.16) 0%, rgba(158, 121, 73, 0.04) 50%, transparent 70%) !important;
+}
+
+.theme-light #hero .inline-flex {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(158, 121, 73, 0.3) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Hero Typography */
+.theme-light h1,
+.theme-light h2,
+.theme-light h3,
+.theme-light h4 {
+  color: #18181c !important;
+}
+
+.theme-light #hero h1 {
+  color: #18181c !important;
+}
+
+.theme-light .luxury-shimmer-text {
+  background: linear-gradient(135deg, #18181c 0%, #785a30 35%, #9e7949 60%, #b89363 85%, #18181c 100%) !important;
+  background-size: 200% auto !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.theme-light #hero p {
+  color: #4a4a55 !important;
+}
+
+/* Hero Buttons */
+.theme-light a[href="#render-to-real"] {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #18181c !important;
+}
+.theme-light a[href="#render-to-real"]:hover {
+  border-color: var(--accent-gold) !important;
+  color: var(--accent-gold) !important;
+}
+
+.theme-light a[download] {
+  color: #52525b !important;
+}
+.theme-light a[download]:hover {
+  color: var(--accent-gold) !important;
+}
+
+/* Hero Metrics */
+.theme-light #hero .mt-20 {
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.theme-light #hero .font-display.text-4xl,
+.theme-light #hero .font-display.text-5xl {
+  background: linear-gradient(135deg, #18181c 0%, #785a30 70%, #9e7949 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.theme-light #hero .text-zinc-500 {
+  color: #71717a !important;
+}
+
+/* Navbar Elements */
+.theme-light #navbar a span.font-serif {
+  color: #18181c !important;
+}
+
+.theme-light #navbar a div.font-serif {
+  background-color: #ffffff !important;
+  border-color: var(--accent-gold) !important;
+  color: var(--accent-gold) !important;
+}
+
+.theme-light .nav-link {
+  color: #4a4a55 !important;
+}
+.theme-light .nav-link:hover {
+  color: var(--accent-gold) !important;
+}
+
+.theme-light a[href*="wa.me"] {
+  background-color: #ffffff !important;
+  color: #15803d !important;
+  border-color: rgba(21, 128, 61, 0.4) !important;
+}
+
+/* Cards & Sections */
+.theme-light .arch-card {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+}
+.theme-light .arch-card:hover {
+  border-color: var(--accent-gold) !important;
+  box-shadow: 0 20px 45px -10px rgba(158, 121, 73, 0.2) !important;
+}
+
+.theme-light .arch-card .bg-gradient-to-t {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.95) 0%, transparent 100%) !important;
+}
+
+.theme-light .arch-card p {
+  color: #52525e !important;
+}
+
+/* General Text Replacements */
 .theme-light .text-white {
   color: #19191d !important;
 }
@@ -145,21 +287,23 @@ body {
 .theme-light .border-white\/10,
 .theme-light .border-white\/15,
 .theme-light .border-white\/20 {
-  border-color: var(--border-subtle) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
 }
 
+/* Form Inputs */
 .theme-light input,
 .theme-light select,
 .theme-light textarea {
   background-color: #ffffff !important;
   color: #18181c !important;
-  border-color: rgba(0, 0, 0, 0.15) !important;
+  border-color: rgba(0, 0, 0, 0.14) !important;
 }
 
 .theme-light input:focus,
 .theme-light select:focus,
 .theme-light textarea:focus {
   border-color: var(--accent-gold) !important;
+  box-shadow: 0 0 0 3px rgba(158, 121, 73, 0.12) !important;
 }
 
 /* Architectural Grid Background Overlay */
