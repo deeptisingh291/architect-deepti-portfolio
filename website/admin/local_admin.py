@@ -1111,12 +1111,13 @@ class MasterAdminRequestHandler(http.server.SimpleHTTPRequestHandler):
 
         if self.path == '/api/publish-live':
             try:
-                # 1. Update zip
-                zip_cmd = f"cd '{BASE_DIR}/website' && zip -FS -r ../deepti-singh-portfolio-deploy.zip . -x '*.DS_Store'"
+                root_dir = os.path.dirname(BASE_DIR)
+                # 1. Update deploy zip
+                zip_cmd = f"cd '{BASE_DIR}' && zip -FS -r '{root_dir}/deepti-singh-portfolio-deploy.zip' . -x '*.DS_Store'"
                 subprocess.run(zip_cmd, shell=True, check=True)
 
                 # 2. Git commit and push to GitHub
-                git_cmd = f"cd '{BASE_DIR}' && git add -A && git commit -m 'Master Control Panel live update' && git push origin main"
+                git_cmd = f"cd '{root_dir}' && git add -A && (git commit -m 'Master Control Panel live update' || true) && git push origin main"
                 result = subprocess.run(git_cmd, shell=True, capture_output=True, text=True)
                 
                 self.send_response(200)
