@@ -1,0 +1,21 @@
+{
+  "id": "proj-livelihood-college",
+  "title": "Livelihood College Campus",
+  "category": "commercial",
+  "category_label": "Commercial & Institutional",
+  "location": "Raipur, C.G.",
+  "client": "Institutional Authority",
+  "image": "assets/projects/livelihood_college_campus_raipur.jpg",
+  "gallery": [
+    "assets/projects/livelihood_college_campus_raipur.jpg",
+    "assets/plans/cad_elevation_college.jpg"
+  ],
+  "featured": true,
+  "tagline": "Grand institutional campus featuring monumental colonnade entry and dynamic wing planning",
+  "description": "A comprehensive institutional facility designed for vocational education and skill development in Raipur. Features symmetrical architectural wings angled around a central civic plaza, solar shading louvers, high-volume atrium, and full CAD elevation engineering.",
+  "details": {
+    "Area": "35,000 Sq. Ft.",
+    "Floors": "G + 3 Floors",
+    "Key Elements": "Symmetrical Splayed Wings, Monumental Canopy, CAD Elevation Drawings, Academic Auditoriums"
+  }
+}

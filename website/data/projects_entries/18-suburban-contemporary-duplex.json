@@ -1,0 +1,19 @@
+{
+  "id": "proj-residence-ram-agrawal",
+  "title": "Suburban Contemporary Duplex",
+  "category": "residential",
+  "category_label": "Residential Architecture",
+  "location": "Raipur, C.G.",
+  "client": "Shri Ram Agrawal",
+  "image": "assets/projects/residence_ram_agrawal.jpg",
+  "gallery": [
+    "assets/projects/residence_ram_agrawal.jpg"
+  ],
+  "featured": false,
+  "tagline": "Exposed concrete finish with organic branch-like balcony pergolas",
+  "description": "A pair of contemporary duplex residences featuring board-formed concrete facade panels, artistic branching terrace canopies, and recessed wooden balconies.",
+  "details": {
+    "Typology": "Twin Duplex Residences",
+    "Location": "Raipur, C.G."
+  }
+}

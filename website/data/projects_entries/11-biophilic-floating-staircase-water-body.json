@@ -1,0 +1,21 @@
+{
+  "id": "proj-indoor-courtyard-staircase",
+  "title": "Biophilic Floating Staircase & Water Body",
+  "category": "interior",
+  "category_label": "Luxury Interiors",
+  "location": "Raipur, C.G.",
+  "client": "Private Residence",
+  "image": "assets/projects/staircase_greenery_courtyard1.jpg",
+  "gallery": [
+    "assets/projects/staircase_greenery_courtyard1.jpg",
+    "assets/projects/staircase_greenery_courtyard2.jpg",
+    "assets/plans/interior_ground_floor_plate.jpg"
+  ],
+  "featured": true,
+  "tagline": "Cantilevered floating marble stairs integrated with living greenery courtyard & indoor water body",
+  "description": "Transforming the transitional under-stair space into the artistic heart of the villa. Features natural stone cladding with up-facing spotlights, cantilevered steps, indoor palm planters, river pebbles, and an organic curved upholstered banquette seating lounge.",
+  "details": {
+    "Concept": "Biophilic Architecture",
+    "Key Elements": "Living Green Wall, River Pebble Base, Floating Steps, Custom Curved Banquette"
+  }
+}

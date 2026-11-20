@@ -1,0 +1,22 @@
+{
+  "id": "proj-muskan-agrawal",
+  "title": "Classical Arched Villa \u2014 Muskan Agrawal",
+  "category": "residential",
+  "category_label": "Residential Architecture",
+  "location": "Raipur, C.G.",
+  "client": "Muskan Agrawal",
+  "image": "assets/projects/residence_muskan_agrawal_render.jpg",
+  "gallery": [
+    "assets/projects/residence_muskan_agrawal_render.jpg",
+    "assets/plans/residence_muskan_agrawal_cad_elevation.jpg"
+  ],
+  "featured": true,
+  "tagline": "G+2 neoclassical manor with stepped crown parapet, arched central loggias, and architectural CAD front elevation",
+  "description": "A grand multi-tier neoclassical residence in Raipur featuring a stepped pyramid rooftop parapet, semicircular central loggias with arched crowning, textured travertine wall cladding, covered cantilever car portico, and complete architectural CAD elevation engineering.",
+  "details": {
+    "Area": "6,200 Sq. Ft.",
+    "Floors": "G + 2 Storeys (Plinth to Terrace)",
+    "Key Elements": "Stepped Crown Parapet, Semicircular Arched Loggias, Ornate Wrought-Iron Railings, Full CAD Front Elevation",
+    "Sections": "Section X-X & Section Y-Y Technical Detailing"
+  }
+}

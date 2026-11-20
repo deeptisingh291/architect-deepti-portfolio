@@ -1,0 +1,20 @@
+{
+  "id": "proj-vikaspratap-palace",
+  "title": "The Neoclassical Estate",
+  "category": "residential",
+  "category_label": "Residential Architecture",
+  "location": "Satna, M.P.",
+  "client": "Shri Vikaspratap Singh",
+  "image": "assets/projects/residence_vikaspratap_singh.jpg",
+  "gallery": [
+    "assets/projects/residence_vikaspratap_singh.jpg"
+  ],
+  "featured": false,
+  "tagline": "Palatial symmetry, arched carriage portico, and expansive manicured lawn estate",
+  "description": "A majestic private country estate in Satna influenced by classical symmetry, classical arched verandas, a grand drive-through carriage porch, and ambient ground spotlighting along lush manicured lawns.",
+  "details": {
+    "Area": "8,500 Sq. Ft.",
+    "Floors": "G + 1 Luxury Estate",
+    "Key Elements": "Classical Archway Carriage Porch, Balustrade Balconies, Central Axial Symmetry, Estate Driveway"
+  }
+}

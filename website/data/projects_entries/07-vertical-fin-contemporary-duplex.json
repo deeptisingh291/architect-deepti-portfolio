@@ -1,0 +1,20 @@
+{
+  "id": "proj-rupesh-agrawal",
+  "title": "Vertical Fin Contemporary Duplex",
+  "category": "residential",
+  "category_label": "Residential Architecture",
+  "location": "Bhopal, M.P.",
+  "client": "Shri Rupesh Agrawal",
+  "image": "assets/projects/residence_rupesh_agrawal.jpg",
+  "gallery": [
+    "assets/projects/residence_rupesh_agrawal.jpg"
+  ],
+  "featured": false,
+  "tagline": "Illuminated vertical fin screen with panoramic terrace verandas",
+  "description": "A corner plot contemporary duplex residence in Bhopal highlighting a dynamic illuminated vertical fin screen wall, expansive glass balustrades, textured slate cladding, and deep shaded balconies.",
+  "details": {
+    "Area": "3,800 Sq. Ft.",
+    "Floors": "Duplex Residence",
+    "Key Elements": "Illuminated Vertical Fin Screen, Corner Orientation, Deep Overhangs, Slate Tile Accents"
+  }
+}

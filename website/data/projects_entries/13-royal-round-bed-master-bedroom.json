@@ -1,0 +1,20 @@
+{
+  "id": "proj-round-bed-suite",
+  "title": "Royal Round-Bed Master Bedroom",
+  "category": "interior",
+  "category_label": "Luxury Interiors",
+  "location": "Raipur, C.G.",
+  "client": "Shri Krishnapratap Soni",
+  "image": "assets/projects/bedroom_krishnapratap_soni_round.jpg",
+  "gallery": [
+    "assets/projects/bedroom_krishnapratap_soni_round.jpg",
+    "assets/projects/bedroom_krishnapratap_soni_geometric.jpg"
+  ],
+  "featured": false,
+  "tagline": "Custom circular statement bed with floor-to-ceiling CNC carved jaali panels",
+  "description": "An exquisite blend of traditional luxury craftsmanship and modern precision. Anchored by a bespoke round platform bed, framed by backlit CNC fretwork jaali panels, fluted vertical timber slats, and illuminated overhead canopy.",
+  "details": {
+    "Bed Type": "Custom Circular Platform Bed",
+    "Craftsmanship": "CNC Jali Lattice, Fluted Wall Slats, Soft Velvet Padding, Indirect Ceiling Illumination"
+  }
+}

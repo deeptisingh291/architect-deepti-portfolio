@@ -1,0 +1,23 @@
+{
+  "id": "proj-luxury-drawing-room",
+  "title": "Sophisticated Drawing Room & Lounge",
+  "category": "interior",
+  "category_label": "Luxury Interiors",
+  "location": "Bhilai, C.G.",
+  "client": "Private Client",
+  "image": "assets/projects/luxury_drawing_room_1.jpg",
+  "gallery": [
+    "assets/projects/luxury_drawing_room_1.jpg",
+    "assets/projects/luxury_drawing_room_2.jpg",
+    "assets/projects/luxury_drawing_room_3.jpg",
+    "assets/plans/drawing_room_plan.jpg"
+  ],
+  "featured": true,
+  "tagline": "Italian marble backdrop, fluted wall molding, and stepped multi-tier cove ceiling",
+  "description": "Commissioned to create an opulent yet calm drawing room for executive hosting. Features full-height bookmatched Italian marble media wall, delicate gold metal wall moldings, crystal chandeliers, acoustic drapery, and custom low-profile seating.",
+  "details": {
+    "Dimensions": "16'0\" x 14'7.5\"",
+    "Materials": "Italian Statuario Marble, Brushed Brass Accents, Natural Veneer, Warm 3000K LED Cove",
+    "Scope": "Complete Turnkey Interior & Furniture Layout"
+  }
+}

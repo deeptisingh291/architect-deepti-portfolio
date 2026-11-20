@@ -1,0 +1,25 @@
+{
+  "id": "proj-modular-kitchen-dining",
+  "title": "Teal Island Kitchen & Dining Suite",
+  "category": "interior",
+  "category_label": "Luxury Interiors",
+  "location": "Bhilai, C.G.",
+  "client": "Private Client",
+  "image": "assets/projects/dining_hall_perspective.jpg",
+  "gallery": [
+    "assets/projects/dining_hall_perspective.jpg",
+    "assets/projects/modular_kitchen_dining_view1.jpg",
+    "assets/projects/modular_kitchen_cabinetry.jpg",
+    "assets/projects/dining_credenza_mirror.jpg",
+    "assets/plans/kitchen_furniture_layout_cad.jpg",
+    "assets/plans/kitchen_electrical_cad.jpg"
+  ],
+  "featured": false,
+  "tagline": "Contemporary teal lacquer modular cabinetry with central quartz island & CAD layouts",
+  "description": "An open-concept kitchen and dining suite executed with precision technical detailing. Includes complete CAD furniture & electrical layout schematics, acrylic teal soft-close shutters, built-in breakfast bar island, and designer dining credenza.",
+  "details": {
+    "Dimensions": "12'5\" x 11'0\" Kitchen + 17'8.5\" x 13'9\" Dining",
+    "Documentation": "CAD Furniture Layout & Electrical Details Included",
+    "Hardware": "Soft-close Tandem Boxes, Quartz Countertops, Designer Pendant Lighting"
+  }
+}

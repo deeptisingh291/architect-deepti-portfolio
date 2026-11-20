@@ -1,0 +1,21 @@
+{
+  "id": "proj-panoramic-bedroom",
+  "title": "Panoramic Bay Window Master Suite",
+  "category": "interior",
+  "category_label": "Luxury Interiors",
+  "location": "Raipur, C.G.",
+  "client": "Private Residence",
+  "image": "assets/projects/bedroom_panoramic_window.jpg",
+  "gallery": [
+    "assets/projects/bedroom_panoramic_window.jpg",
+    "assets/projects/bedroom_emerald_luxury.jpg",
+    "assets/projects/bedroom_classic_chandelier.jpg",
+    "assets/projects/living_lounge_blue_cove_large.jpg"
+  ],
+  "featured": false,
+  "tagline": "Curved bay sitting alcove with timber slatted ceiling canopy and warm indirect glow",
+  "description": "An intimate bedroom retreat built around a panoramic picture window with built-in bay seating. The bed headboard flows into a timber slat accent wall that wraps seamlessly onto the ceiling with recessed cove light ribbons.",
+  "details": {
+    "Features": "Curved Window Bay Bench, Wrapped Timber Slat Ceiling, Tufted Low-profile Bed"
+  }
+}

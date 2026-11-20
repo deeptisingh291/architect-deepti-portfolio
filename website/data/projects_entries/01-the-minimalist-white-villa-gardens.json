@@ -1,0 +1,26 @@
+{
+  "id": "proj-minimalist-villa",
+  "title": "The Minimalist White Villa & Gardens",
+  "category": "residential",
+  "category_label": "Residential Architecture",
+  "location": "Durg-Bhilai, C.G.",
+  "client": "Private Client",
+  "image": "assets/projects/minimalist_white_villa.jpg",
+  "gallery": [
+    "assets/projects/minimalist_white_villa.jpg",
+    "assets/projects/modern_villa_facade_1.jpg",
+    "assets/projects/modern_villa_facade_2.jpg",
+    "assets/projects/villa_garden_detail1.jpg",
+    "assets/projects/villa_garden_detail2.jpg",
+    "assets/plans/villa_ground_floor_3d.jpg",
+    "assets/plans/villa_first_floor_3d.jpg"
+  ],
+  "featured": true,
+  "tagline": "Clean minimal aesthetic with an all-white palette, sunken fire pit, and family gardens",
+  "description": "Designed with a strict aesthetic of restraint, this luxury multi-level villa avoids visual clutter and excess texture, favoring pure architectural volumes bathed in warm architectural lighting. Features include a dedicated kitchen garden, expansive family backyard, sunken fire pit lounge, and cantilevered terrace pergolas.",
+  "details": {
+    "Area": "4,800 Sq. Ft.",
+    "Floors": "G + 2 Storey",
+    "Key Elements": "Sunken Fire Pit, Family Lawn, Kitchen Garden, 3D Cutaway Floor Zoning, All-White Minimalist Stucco"
+  }
+}

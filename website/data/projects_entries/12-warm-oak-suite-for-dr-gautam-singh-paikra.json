@@ -1,0 +1,20 @@
+{
+  "id": "proj-master-bedroom-gautam-singh",
+  "title": "Warm Oak Suite for Dr. Gautam Singh Paikra",
+  "category": "interior",
+  "category_label": "Luxury Interiors",
+  "location": "Raipur, C.G.",
+  "client": "Dr. Gautam Singh Paikra",
+  "image": "assets/projects/bedroom_dr_gautam_singh_view1.jpg",
+  "gallery": [
+    "assets/projects/bedroom_dr_gautam_singh_view1.jpg",
+    "assets/projects/bedroom_dr_gautam_singh_view2.jpg"
+  ],
+  "featured": false,
+  "tagline": "Natural oak wood cabinetry, floating vanity dresser, and horizontal textured wall paneling",
+  "description": "A serene master bedroom suite defined by natural blonde oak wardrobe finishes, concealed handle grooves, floating dressing table with backlit mirror, and expansive garden view windows bringing natural light deep into the room.",
+  "details": {
+    "Scope": "Full Master Suite Interior",
+    "Materials": "Natural Oak Veneer, Matt PU Finish, Corian Surfaces, Warm Spotlights"
+  }
+}

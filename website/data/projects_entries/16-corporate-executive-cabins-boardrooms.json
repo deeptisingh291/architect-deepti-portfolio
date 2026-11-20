@@ -1,0 +1,20 @@
+{
+  "id": "proj-executive-office-cabins",
+  "title": "Corporate Executive Cabins & Boardrooms",
+  "category": "commercial",
+  "category_label": "Commercial & Institutional",
+  "location": "Durg, C.G.",
+  "client": "Corporate Offices",
+  "image": "assets/projects/office_cabin_interior_1.jpg",
+  "gallery": [
+    "assets/projects/office_cabin_interior_1.jpg",
+    "assets/projects/office_cabin_interior_2.jpg",
+    "assets/projects/office_executive_desk.jpg"
+  ],
+  "featured": false,
+  "tagline": "Modern executive workspaces with acoustic paneling and ergonomic layouts",
+  "description": "Tailored commercial interiors designed for high productivity and executive prestige, incorporating integrated cable management, veneer desks, and understated ambient lighting.",
+  "details": {
+    "Scope": "Executive MD Cabins & Client Discussion Lounges"
+  }
+}

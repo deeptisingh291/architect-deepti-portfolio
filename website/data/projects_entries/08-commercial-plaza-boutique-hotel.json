@@ -1,0 +1,20 @@
+{
+  "id": "proj-commercial-ravindra-soni",
+  "title": "Commercial Plaza & Boutique Hotel",
+  "category": "commercial",
+  "category_label": "Commercial & Institutional",
+  "location": "Ambikapur, C.G.",
+  "client": "Shri Ravindra Soni",
+  "image": "assets/projects/commercial_hotel_ravindra_soni.jpg",
+  "gallery": [
+    "assets/projects/commercial_hotel_ravindra_soni.jpg"
+  ],
+  "featured": false,
+  "tagline": "Ground-floor retail arcade with luxury upper boutique hospitality suites",
+  "description": "A mixed-use commercial development strategically positioned on a busy urban corridor in Ambikapur. Features ground-level retail storefronts with recessed roller shutters and upper floors accommodating a contemporary boutique hotel with modular ACP and stone facade paneling.",
+  "details": {
+    "Area": "14,000 Sq. Ft.",
+    "Floors": "G + 2 Mixed Use",
+    "Key Elements": "Ground Retail Arcade, Hotel Suites, Modular ACP Grid Facade, Corner Circulation"
+  }
+}

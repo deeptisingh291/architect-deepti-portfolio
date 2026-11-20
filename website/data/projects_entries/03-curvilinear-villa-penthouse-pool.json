@@ -1,0 +1,25 @@
+{
+  "id": "proj-krishnapratap-curved",
+  "title": "Curvilinear Villa & Penthouse Pool",
+  "category": "residential",
+  "category_label": "Residential Architecture",
+  "location": "Ambikapur, C.G.",
+  "client": "Shri Krishnapratap Soni",
+  "image": "assets/projects/residence_krishnapratap_soni.jpg",
+  "gallery": [
+    "assets/projects/residence_krishnapratap_soni.jpg",
+    "assets/projects/rooftop_pool_krishnapratap_sunset.jpg",
+    "assets/projects/rooftop_pool_krishnapratap_detail.jpg",
+    "assets/projects/rooftop_pool_krishnapratap_lounge.jpg",
+    "assets/projects/bedroom_krishnapratap_soni_round.jpg",
+    "assets/projects/bedroom_krishnapratap_soni_geometric.jpg"
+  ],
+  "featured": true,
+  "tagline": "Striking curvilinear timber facade with a private rooftop swimming pool",
+  "description": "An avant-garde residential statement in Ambikapur featuring an undulating timber louvre facade and sweeping curved glass balconies. The top tier features a private rooftop swimming pool flanked by treated wood decking, cascading water spouts, and a sunset lounge.",
+  "details": {
+    "Area": "5,200 Sq. Ft.",
+    "Floors": "G + 3 Storey",
+    "Key Elements": "Rooftop Swimming Pool, Curvilinear Wood Facade, Sunset Deck, Statement Round Bed Master Suite"
+  }
+}

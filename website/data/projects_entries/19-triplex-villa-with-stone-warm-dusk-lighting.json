@@ -1,0 +1,19 @@
+{
+  "id": "proj-residence-aviral-sachdev",
+  "title": "Triplex Villa with Stone & Warm Dusk Lighting",
+  "category": "residential",
+  "category_label": "Residential Architecture",
+  "location": "Ambikapur, C.G.",
+  "client": "Shri Aviral Sachdev",
+  "image": "assets/projects/residence_aviral_sachdev.jpg",
+  "gallery": [
+    "assets/projects/residence_aviral_sachdev.jpg"
+  ],
+  "featured": false,
+  "tagline": "Multi-tier residential massing with integrated exterior sconces and stone masonry",
+  "description": "Sophisticated evening architecture showing warm 2700K perimeter lighting accentuating stone clad columns, timber window frames, and upper terrace lounge.",
+  "details": {
+    "Typology": "Triplex Villa",
+    "Location": "Ambikapur, C.G."
+  }
+}

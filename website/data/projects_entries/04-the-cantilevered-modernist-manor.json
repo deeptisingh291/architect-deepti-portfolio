@@ -1,0 +1,21 @@
+{
+  "id": "proj-nishikant-mishra",
+  "title": "The Cantilevered Modernist Manor",
+  "category": "residential",
+  "category_label": "Residential Architecture",
+  "location": "Bhilai, C.G.",
+  "client": "Shri Nishikant Mishra",
+  "image": "assets/projects/residence_nishikant_mishra_aerial.jpg",
+  "gallery": [
+    "assets/projects/residence_nishikant_mishra_aerial.jpg",
+    "assets/projects/residence_nishikant_mishra_front.jpg"
+  ],
+  "featured": true,
+  "tagline": "Sculptural interlocking volumes with grey ledgestone cladding and skylight pergola",
+  "description": "A prime suburban residence in Bhilai defined by bold horizontal cantilevers, split-level car porch, natural stone cladding, and a rooftop skylight lounge. The perimeter boundary wall integrates warm ambient wash lighting that enhances the curb appeal at night.",
+  "details": {
+    "Area": "4,200 Sq. Ft.",
+    "Floors": "Duplex Residence",
+    "Key Elements": "Double Covered Portico, Ledgestone Accent Walls, Skylight Cutouts, Integrated Landscape"
+  }
+}

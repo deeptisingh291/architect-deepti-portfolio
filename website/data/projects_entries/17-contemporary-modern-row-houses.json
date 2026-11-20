@@ -1,0 +1,19 @@
+{
+  "id": "proj-row-houses-rajesh-gupta",
+  "title": "Contemporary Modern Row Houses",
+  "category": "residential",
+  "category_label": "Residential Architecture",
+  "location": "Raipur, C.G.",
+  "client": "Shri Rajesh Gupta",
+  "image": "assets/projects/row_houses_rajesh_gupta_raipur.jpg",
+  "gallery": [
+    "assets/projects/row_houses_rajesh_gupta_raipur.jpg"
+  ],
+  "featured": false,
+  "tagline": "Rhythmic modern row housing with arched entryways and vibrant accent color blocks",
+  "description": "A rhythmic modern housing enclave designed with playful roof profiles, circular porthole windows, individual gated driveways, and manicured street landscaping.",
+  "details": {
+    "Typology": "Multi-Unit Row Housing",
+    "Location": "Raipur, C.G."
+  }
+}

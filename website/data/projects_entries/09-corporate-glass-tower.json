@@ -1,0 +1,21 @@
+{
+  "id": "proj-commercial-bhajan-agrawal",
+  "title": "Corporate Glass Tower",
+  "category": "commercial",
+  "category_label": "Commercial & Institutional",
+  "location": "Ambikapur, C.G.",
+  "client": "Shri Bhajan Agrawal",
+  "image": "assets/projects/commercial_bhajan_agrawal.jpg",
+  "gallery": [
+    "assets/projects/commercial_bhajan_agrawal.jpg",
+    "assets/projects/commercial_facade_modern_glass.jpg"
+  ],
+  "featured": false,
+  "tagline": "High-performance structural glass curtain wall corporate headquarters",
+  "description": "An imposing commercial office building designed for corporate and financial clients in Ambikapur. Highlights include a full-height double-glazed reflective curtain wall, contrasting horizontal louvre fins, and generous ground-floor customer banking lobby.",
+  "details": {
+    "Area": "18,500 Sq. Ft.",
+    "Floors": "G + 4 Commercial Storeys",
+    "Key Elements": "Curtain Wall Glazing, Shading Louvres, Ground Retail, Corporate Executive Suites"
+  }
+}
