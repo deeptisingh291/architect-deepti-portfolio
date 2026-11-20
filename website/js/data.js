@@ -9,7 +9,7 @@ window.__PORTFOLIO_DATA__ = {
       "+91 7000098073"
     ],
     "email": "deeptisingh291@gmail.com",
-    "avatar": "assets/profile/deepti_singh.jpg",
+    "avatar": "assets/profile/deepti_singh_1.jpg",
     "bio": "Ar. Deepti Singh is a distinguished Architect and Interior Designer with over 12 years of dedicated practice across residential, commercial, and institutional domains (active in the profession since 2013). Holding a Bachelor of Architecture (First Class) from C.S.V.T.U. Bhilai and specialized Post Graduation in Rural Development from IGNOU Delhi, she bridges contemporary architectural aesthetics with functional, climate-responsive spatial planning. Her portfolio spans ultra-luxury private residences, educational campuses, high-density residential developments, and bespoke interior environments.",
     "education": [
       {
@@ -53,39 +53,20 @@ window.__PORTFOLIO_DATA__ = {
     ],
     "skills": [
       {
-        "name": "AutoCAD",
-        "level": 95,
-        "category": "Drafting & Technical Plans"
+        "name": "AutoCAD 2D/3D",
+        "percentage": "95%"
       },
       {
         "name": "Google SketchUp",
-        "level": 90,
-        "category": "3D Massing & Modeling"
+        "percentage": "90%"
       },
       {
-        "name": "3ds Max",
-        "level": 88,
-        "category": "High-End Visualization & Rendering"
+        "name": "Autodesk 3ds Max",
+        "percentage": "88%"
       },
       {
-        "name": "Revit Architecture",
-        "level": 82,
-        "category": "BIM & Structural Detailing"
-      },
-      {
-        "name": "Adobe Photoshop",
-        "level": 85,
-        "category": "Post-Production & Elevation Compositing"
-      },
-      {
-        "name": "Space Planning & Zoning",
-        "level": 96,
-        "category": "Architectural Planning"
-      },
-      {
-        "name": "On-Site Turnkey Supervision",
-        "level": 92,
-        "category": "Project Execution"
+        "name": "Autodesk Revit Architecture",
+        "percentage": "82%"
       }
     ],
     "philosophy": "Every architectural form should arise naturally from its context, light, and function. We favor clean geometry, all-white minimalist palettes accented by natural timber and ledgestone, and seamless transitions between indoor living and landscaped courtyards."

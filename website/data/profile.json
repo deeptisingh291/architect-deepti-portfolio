@@ -3,10 +3,72 @@
   "title": "Architect & Interior Designer",
   "experience": "12+ Years of Practice (Since 2013)",
   "location": "Durg - Bhilai & Raipur, Chhattisgarh, India",
-  "avatar": "assets/projects/deepti-photo.jpg",
   "primary_phone": "+91 8989594919",
   "secondary_phone": "+91 7000098073",
+  "phone": [
+    "+91 8989594919",
+    "+91 7000098073"
+  ],
   "email": "deeptisingh291@gmail.com",
+  "avatar": "assets/profile/deepti_singh_1.jpg",
   "bio": "Ar. Deepti Singh is a distinguished Architect and Interior Designer with over 12 years of dedicated practice across residential, commercial, and institutional domains (active in the profession since 2013). Holding a Bachelor of Architecture (First Class) from C.S.V.T.U. Bhilai and specialized Post Graduation in Rural Development from IGNOU Delhi, she bridges contemporary architectural aesthetics with functional, climate-responsive spatial planning. Her portfolio spans ultra-luxury private residences, educational campuses, high-density residential developments, and bespoke interior environments.",
+  "education": [
+    {
+      "degree": "Bachelor of Architecture (B.Arch)",
+      "institution": "C.S.V.T.U. Bhilai (C.G.)",
+      "period": "2009 - 2014",
+      "grade": "First Class Honours"
+    },
+    {
+      "degree": "Post Graduation in Rural Development",
+      "institution": "IGNOU Delhi",
+      "period": "2009 - 2014",
+      "grade": "First Class"
+    },
+    {
+      "degree": "Higher Secondary Education",
+      "institution": "M.P. Board Bhopal",
+      "period": "2008 - 2009",
+      "grade": "First Class"
+    }
+  ],
+  "experience_history": [
+    {
+      "role": "Lead Architect",
+      "firm": "Buildage Architecture, Durg-Bhilai (C.G.)",
+      "period": "Jun 2017 - Present",
+      "description": "Leading comprehensive architectural design, 3D visualization, municipal sanction drawings, interior turnkey execution, and on-site construction supervision for high-end residential villas and commercial complexes."
+    },
+    {
+      "role": "Assistant Architect",
+      "firm": "Pilliwar & Associates, Raipur (C.G.)",
+      "period": "Jun 2014 - Jun 2017",
+      "description": "Engaged with renowned engineering & valuation firm established in 1988; executed structural coordination, residential blueprints, and institutional projects."
+    },
+    {
+      "role": "Intern Architect",
+      "firm": "Kapadia & Associates, Raipur (C.G.)",
+      "period": "Jan 2013 - Jun 2013",
+      "description": "Hands-on drafting, architectural modeling, site inspection, and client presentation drawings."
+    }
+  ],
+  "skills": [
+    {
+      "name": "AutoCAD 2D/3D",
+      "percentage": "95%"
+    },
+    {
+      "name": "Google SketchUp",
+      "percentage": "90%"
+    },
+    {
+      "name": "Autodesk 3ds Max",
+      "percentage": "88%"
+    },
+    {
+      "name": "Autodesk Revit Architecture",
+      "percentage": "82%"
+    }
+  ],
   "philosophy": "Every architectural form should arise naturally from its context, light, and function. We favor clean geometry, all-white minimalist palettes accented by natural timber and ledgestone, and seamless transitions between indoor living and landscaped courtyards."
 }
