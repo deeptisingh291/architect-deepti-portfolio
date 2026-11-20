@@ -1,0 +1,92 @@
+# ==============================================================================
+# DECAP CMS CONFIGURATION FOR AR. DEEPTI SINGH PORTFOLIO
+# Allows visual editing of projects, photos, biography, and credentials
+# ==============================================================================
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Media / Uploads Directory
+media_folder: "assets/projects"
+public_folder: "assets/projects"
+
+# Editorial Workflow
+publish_mode: simple
+
+# Collections of Editable Content
+collections:
+  # ----------------------------------------------------------------------------
+  # COLLECTION 1: ARCHITECTURAL & INTERIOR PROJECTS
+  # ----------------------------------------------------------------------------
+  - name: "projects"
+    label: "Projects Portfolio"
+    label_singular: "Project"
+    folder: "data/projects_entries"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Project ID", name: "id", widget: "string", hint: "Unique identifier, e.g. proj-modern-villa" }
+      - { label: "Project Title", name: "title", widget: "string", hint: "e.g. The Minimalist White Villa & Gardens" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Residential Architecture", value: "residential" }
+          - { label: "Commercial & Institutional", value: "commercial" }
+          - { label: "Luxury Interiors", value: "interior" }
+      - { label: "Category Label", name: "category_label", widget: "string", default: "Residential Architecture" }
+      - { label: "Location", name: "location", widget: "string", hint: "e.g. Raipur, C.G. or Bhilai, C.G." }
+      - { label: "Client Name", name: "client", widget: "string", required: false, hint: "e.g. Shri Rajesh Gupta" }
+      - { label: "Featured on Homepage", name: "featured", widget: "boolean", default: true }
+      - { label: "Cover Image", name: "image", widget: "image", hint: "Primary high-resolution perspective render or photo" }
+      - label: "Gallery & Blueprints"
+        name: "gallery"
+        widget: "list"
+        field: { label: "Photo / Plan", name: "item", widget: "image" }
+      - { label: "Tagline", name: "tagline", widget: "string", hint: "Short 1-line architectural hook" }
+      - { label: "Architectural Scope & Description", name: "description", widget: "text" }
+      - label: "Technical Dossier / Specifications"
+        name: "details"
+        widget: "object"
+        fields:
+          - { label: "Area / Dimensions", name: "Area", widget: "string", required: false, hint: "e.g. 4,800 Sq. Ft." }
+          - { label: "Floors / Storeys", name: "Floors", widget: "string", required: false, hint: "e.g. G + 2 Storey" }
+          - { label: "Key Elements / Materials", name: "Key Elements", widget: "string", required: false, hint: "e.g. Sunken Fire Pit, Italian Marble, Teakwood" }
+
+  # ----------------------------------------------------------------------------
+  # COLLECTION 2: ARCHITECT PROFILE & BIOGRAPHY
+  # ----------------------------------------------------------------------------
+  - name: "profile"
+    label: "Architect Biography & Contact"
+    files:
+      - file: "data/profile.json"
+        label: "Ar. Deepti Singh Profile"
+        name: "architect_profile"
+        fields:
+          - { label: "Architect Name", name: "name", widget: "string", default: "Ar. Deepti Singh" }
+          - { label: "Professional Title", name: "title", widget: "string", default: "Architect & Interior Designer" }
+          - { label: "Experience Badge", name: "experience", widget: "string", default: "12+ Years of Practice (Since 2013)" }
+          - { label: "Location", name: "location", widget: "string", default: "Durg - Bhilai & Raipur, Chhattisgarh, India" }
+          - { label: "Profile Portrait Photo", name: "avatar", widget: "image" }
+          - { label: "Primary Phone", name: "primary_phone", widget: "string", default: "+91 8989594919" }
+          - { label: "Secondary Phone", name: "secondary_phone", widget: "string", default: "+91 7000098073" }
+          - { label: "Official Email", name: "email", widget: "string", default: "deeptisingh291@gmail.com" }
+          - { label: "Full Biography", name: "bio", widget: "text" }
+          - { label: "Design Philosophy", name: "philosophy", widget: "text" }
+
+  # ----------------------------------------------------------------------------
+  # COLLECTION 3: RENDER TO REAL CASES
+  # ----------------------------------------------------------------------------
+  - name: "render_to_real"
+    label: "Render to Real Cases"
+    folder: "data/render_to_real_entries"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Case Title", name: "title", widget: "string" }
+      - { label: "3D Render Image", name: "render_img", widget: "image" }
+      - { label: "Actual Built Photo", name: "real_img", widget: "image" }
+      - { label: "Execution Description", name: "description", widget: "text" }

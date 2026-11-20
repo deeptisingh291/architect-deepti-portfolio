@@ -1,0 +1,12 @@
+# macOS system files
+.DS_Store
+*/.DS_Store
+
+# Deployment archives & raw dump folders
+*.zip
+extracted_assets/
+website_assets/
+crop*.jpg
+
+# Ignore root duplicate PDFs (original download copies exist in website/assets/documents/)
+/*.pdf

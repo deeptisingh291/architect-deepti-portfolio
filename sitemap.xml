@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://architectdeepti.in/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://architectdeepti.in/assets/projects/minimalist_white_villa.jpg</image:loc>
+      <image:title>Minimalist White Villa Architectural Elevation - Ar. Deepti Singh</image:title>
+      <image:caption>Contemporary luxury residence elevation designed by Ar. Deepti Singh in Durg-Bhilai</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://architectdeepti.in/assets/projects/residence_muskan_agrawal_render.jpg</image:loc>
+      <image:title>Classical Arched Luxury Villa - Muskan Agrawal</image:title>
+      <image:caption>Bespoke classical villa exterior 3D render by Ar. Deepti Singh</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://architectdeepti.in/assets/projects/commercial_facade_render.jpg</image:loc>
+      <image:title>Modern Commercial Complex Facade &amp; Plaza</image:title>
+      <image:caption>Multi-storey commercial glass facade architectural design</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://architectdeepti.in/assets/projects/livelihood_college_campus_raipur.jpg</image:loc>
+      <image:title>Livelihood College Institutional Campus, Raipur</image:title>
+      <image:caption>Government institutional campus layout and elevation</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://architectdeepti.in/assets/projects/row_houses_rajesh_gupta_raipur.jpg</image:loc>
+      <image:title>Modern Row Housing Development - Rajesh Gupta, Raipur</image:title>
+      <image:caption>Residential row houses architectural planning</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://architectdeepti.in/assets/projects/3d_cutaway_isometric_floor_plan.jpg</image:loc>
+      <image:title>3D Cutaway Isometric Interior Architectural Plan</image:title>
+      <image:caption>Spatial room layout, materials, and turnkey interior furniture plan</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://architectdeepti.in/assets/profile/deepti_singh.jpg</image:loc>
+      <image:title>Ar. Deepti Singh - Lead Architect &amp; Interior Designer</image:title>
+      <image:caption>Portrait of Ar. Deepti Singh (B.Arch CSVTU, 12+ years experience)</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://architectdeepti.in/assets/plans/blueprint_floorplan_1.jpg</image:loc>
+      <image:title>AutoCAD Working Blueprint &amp; Structural Floor Plan</image:title>
+      <image:caption>Technical working drawings and sanction floor plans</image:caption>
+    </image:image>
+  </url>
+</urlset>

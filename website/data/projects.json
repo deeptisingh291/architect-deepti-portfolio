@@ -1,0 +1,616 @@
+{
+  "architect": {
+    "name": "Ar. Deepti Singh",
+    "title": "Architect & Interior Designer",
+    "experience": "12+ Years of Practice (Since 2013)",
+    "location": "Durg - Bhilai & Raipur, Chhattisgarh, India",
+    "phone": [
+      "+91 8989594919",
+      "+91 7000098073"
+    ],
+    "email": "deeptisingh291@gmail.com",
+    "avatar": "assets/profile/deepti_singh.jpg",
+    "bio": "Ar. Deepti Singh is a distinguished Architect and Interior Designer with over 12 years of dedicated practice across residential, commercial, and institutional domains (active in the profession since 2013). Holding a Bachelor of Architecture (First Class) from C.S.V.T.U. Bhilai and specialized Post Graduation in Rural Development from IGNOU Delhi, she bridges contemporary architectural aesthetics with functional, climate-responsive spatial planning. Her portfolio spans ultra-luxury private residences, educational campuses, high-density residential developments, and bespoke interior environments.",
+    "education": [
+      {
+        "degree": "Bachelor of Architecture (B.Arch)",
+        "institution": "C.S.V.T.U. Bhilai (C.G.)",
+        "period": "2009 - 2014",
+        "grade": "First Class Honours"
+      },
+      {
+        "degree": "Post Graduation in Rural Development",
+        "institution": "IGNOU Delhi",
+        "period": "2009 - 2014",
+        "grade": "First Class"
+      },
+      {
+        "degree": "Higher Secondary Education",
+        "institution": "M.P. Board Bhopal",
+        "period": "2008 - 2009",
+        "grade": "First Class"
+      }
+    ],
+    "experience_history": [
+      {
+        "role": "Lead Architect",
+        "firm": "Buildage Architecture, Durg-Bhilai (C.G.)",
+        "period": "Jun 2017 - Present",
+        "description": "Leading comprehensive architectural design, 3D visualization, municipal sanction drawings, interior turnkey execution, and on-site construction supervision for high-end residential villas and commercial complexes."
+      },
+      {
+        "role": "Assistant Architect",
+        "firm": "Pilliwar & Associates, Raipur (C.G.)",
+        "period": "Jun 2014 - Jun 2017",
+        "description": "Engaged with renowned engineering & valuation firm established in 1988; executed structural coordination, residential blueprints, and institutional projects."
+      },
+      {
+        "role": "Intern Architect",
+        "firm": "Kapadia & Associates, Raipur (C.G.)",
+        "period": "Jan 2013 - Jun 2013",
+        "description": "Hands-on drafting, architectural modeling, site inspection, and client presentation drawings."
+      }
+    ],
+    "skills": [
+      {
+        "name": "AutoCAD",
+        "level": 95,
+        "category": "Drafting & Technical Plans"
+      },
+      {
+        "name": "Google SketchUp",
+        "level": 90,
+        "category": "3D Massing & Modeling"
+      },
+      {
+        "name": "3ds Max",
+        "level": 88,
+        "category": "High-End Visualization & Rendering"
+      },
+      {
+        "name": "Revit Architecture",
+        "level": 82,
+        "category": "BIM & Structural Detailing"
+      },
+      {
+        "name": "Adobe Photoshop",
+        "level": 85,
+        "category": "Post-Production & Elevation Compositing"
+      },
+      {
+        "name": "Space Planning & Zoning",
+        "level": 96,
+        "category": "Architectural Planning"
+      },
+      {
+        "name": "On-Site Turnkey Supervision",
+        "level": 92,
+        "category": "Project Execution"
+      }
+    ],
+    "philosophy": "Every architectural form should arise naturally from its context, light, and function. We favor clean geometry, all-white minimalist palettes accented by natural timber and ledgestone, and seamless transitions between indoor living and landscaped courtyards."
+  },
+  "stats": [
+    {
+      "value": "12+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "50+",
+      "label": "Projects Designed"
+    },
+    {
+      "value": "100%",
+      "label": "Render to Reality Execution"
+    },
+    {
+      "value": "6+",
+      "label": "Cities Across C.G. & M.P."
+    }
+  ],
+  "render_to_real": {
+    "title": "Render to Reality: Precision in Execution",
+    "subtitle": "From photorealistic 3D visualization to physical stone, timber, and glass execution.",
+    "items": [
+      {
+        "title": "Main Entrance Grand Portico & Teakwood Door",
+        "render_img": "assets/render_to_real/entrance_render_vs_real.jpg",
+        "real_img": "assets/render_to_real/entrance_render_vs_real.jpg",
+        "description": "Exact 1:1 translation of custom solid teak paneled double entrance door with Italian marble steps, warm brass sconces, and recessed cove lighting."
+      },
+      {
+        "title": "Contemporary Luxury Villa Facade",
+        "render_img": "assets/render_to_real/render_facade_final.jpg",
+        "real_img": "assets/render_to_real/real_facade_built.jpg",
+        "description": "Full physical manifestation of the multi-tiered residence featuring geometric cantilever overhangs, warm exterior boundary wall wash lights, and private forecourt."
+      },
+      {
+        "title": "Structural RCC Framework to Complete Residence",
+        "render_img": "assets/render_to_real/villa_render_front.jpg",
+        "real_img": "assets/render_to_real/site_construction_view1.jpg",
+        "description": "Tracking the structural evolution from concrete shuttering and cantilever slab casting to the finished contemporary duplex."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "proj-minimalist-villa",
+      "title": "The Minimalist White Villa & Gardens",
+      "category": "residential",
+      "category_label": "Residential Architecture",
+      "location": "Durg-Bhilai, C.G.",
+      "client": "Private Client",
+      "image": "assets/projects/minimalist_white_villa.jpg",
+      "gallery": [
+        "assets/projects/minimalist_white_villa.jpg",
+        "assets/projects/modern_villa_facade_1.jpg",
+        "assets/projects/modern_villa_facade_2.jpg",
+        "assets/projects/villa_garden_detail1.jpg",
+        "assets/projects/villa_garden_detail2.jpg",
+        "assets/plans/villa_ground_floor_3d.jpg",
+        "assets/plans/villa_first_floor_3d.jpg"
+      ],
+      "featured": true,
+      "tagline": "Clean minimal aesthetic with an all-white palette, sunken fire pit, and family gardens",
+      "description": "Designed with a strict aesthetic of restraint, this luxury multi-level villa avoids visual clutter and excess texture, favoring pure architectural volumes bathed in warm architectural lighting. Features include a dedicated kitchen garden, expansive family backyard, sunken fire pit lounge, and cantilevered terrace pergolas.",
+      "details": {
+        "Area": "4,800 Sq. Ft.",
+        "Floors": "G + 2 Storey",
+        "Key Elements": "Sunken Fire Pit, Family Lawn, Kitchen Garden, 3D Cutaway Floor Zoning, All-White Minimalist Stucco"
+      }
+    },
+    {
+      "id": "proj-muskan-agrawal",
+      "title": "Classical Arched Villa \u2014 Muskan Agrawal",
+      "category": "residential",
+      "category_label": "Residential Architecture",
+      "location": "Raipur, C.G.",
+      "client": "Muskan Agrawal",
+      "image": "assets/projects/residence_muskan_agrawal_render.jpg",
+      "gallery": [
+        "assets/projects/residence_muskan_agrawal_render.jpg",
+        "assets/plans/residence_muskan_agrawal_cad_elevation.jpg"
+      ],
+      "featured": true,
+      "tagline": "G+2 neoclassical manor with stepped crown parapet, arched central loggias, and architectural CAD front elevation",
+      "description": "A grand multi-tier neoclassical residence in Raipur featuring a stepped pyramid rooftop parapet, semicircular central loggias with arched crowning, textured travertine wall cladding, covered cantilever car portico, and complete architectural CAD elevation engineering.",
+      "details": {
+        "Area": "6,200 Sq. Ft.",
+        "Floors": "G + 2 Storeys (Plinth to Terrace)",
+        "Key Elements": "Stepped Crown Parapet, Semicircular Arched Loggias, Ornate Wrought-Iron Railings, Full CAD Front Elevation",
+        "Sections": "Section X-X & Section Y-Y Technical Detailing"
+      }
+    },
+    {
+      "id": "proj-krishnapratap-curved",
+      "title": "Curvilinear Villa & Penthouse Pool",
+      "category": "residential",
+      "category_label": "Residential Architecture",
+      "location": "Ambikapur, C.G.",
+      "client": "Shri Krishnapratap Soni",
+      "image": "assets/projects/residence_krishnapratap_soni.jpg",
+      "gallery": [
+        "assets/projects/residence_krishnapratap_soni.jpg",
+        "assets/projects/rooftop_pool_krishnapratap_sunset.jpg",
+        "assets/projects/rooftop_pool_krishnapratap_detail.jpg",
+        "assets/projects/rooftop_pool_krishnapratap_lounge.jpg",
+        "assets/projects/bedroom_krishnapratap_soni_round.jpg",
+        "assets/projects/bedroom_krishnapratap_soni_geometric.jpg"
+      ],
+      "featured": true,
+      "tagline": "Striking curvilinear timber facade with a private rooftop swimming pool",
+      "description": "An avant-garde residential statement in Ambikapur featuring an undulating timber louvre facade and sweeping curved glass balconies. The top tier features a private rooftop swimming pool flanked by treated wood decking, cascading water spouts, and a sunset lounge.",
+      "details": {
+        "Area": "5,200 Sq. Ft.",
+        "Floors": "G + 3 Storey",
+        "Key Elements": "Rooftop Swimming Pool, Curvilinear Wood Facade, Sunset Deck, Statement Round Bed Master Suite"
+      }
+    },
+    {
+      "id": "proj-nishikant-mishra",
+      "title": "The Cantilevered Modernist Manor",
+      "category": "residential",
+      "category_label": "Residential Architecture",
+      "location": "Bhilai, C.G.",
+      "client": "Shri Nishikant Mishra",
+      "image": "assets/projects/residence_nishikant_mishra_aerial.jpg",
+      "gallery": [
+        "assets/projects/residence_nishikant_mishra_aerial.jpg",
+        "assets/projects/residence_nishikant_mishra_front.jpg"
+      ],
+      "featured": true,
+      "tagline": "Sculptural interlocking volumes with grey ledgestone cladding and skylight pergola",
+      "description": "A prime suburban residence in Bhilai defined by bold horizontal cantilevers, split-level car porch, natural stone cladding, and a rooftop skylight lounge. The perimeter boundary wall integrates warm ambient wash lighting that enhances the curb appeal at night.",
+      "details": {
+        "Area": "4,200 Sq. Ft.",
+        "Floors": "Duplex Residence",
+        "Key Elements": "Double Covered Portico, Ledgestone Accent Walls, Skylight Cutouts, Integrated Landscape"
+      }
+    },
+    {
+      "id": "proj-livelihood-college",
+      "title": "Livelihood College Campus",
+      "category": "commercial",
+      "category_label": "Commercial & Institutional",
+      "location": "Raipur, C.G.",
+      "client": "Institutional Authority",
+      "image": "assets/projects/livelihood_college_campus_raipur.jpg",
+      "gallery": [
+        "assets/projects/livelihood_college_campus_raipur.jpg",
+        "assets/plans/cad_elevation_college.jpg"
+      ],
+      "featured": true,
+      "tagline": "Grand institutional campus featuring monumental colonnade entry and dynamic wing planning",
+      "description": "A comprehensive institutional facility designed for vocational education and skill development in Raipur. Features symmetrical architectural wings angled around a central civic plaza, solar shading louvers, high-volume atrium, and full CAD elevation engineering.",
+      "details": {
+        "Area": "35,000 Sq. Ft.",
+        "Floors": "G + 3 Floors",
+        "Key Elements": "Symmetrical Splayed Wings, Monumental Canopy, CAD Elevation Drawings, Academic Auditoriums"
+      }
+    },
+    {
+      "id": "proj-vikaspratap-palace",
+      "title": "The Neoclassical Estate",
+      "category": "residential",
+      "category_label": "Residential Architecture",
+      "location": "Satna, M.P.",
+      "client": "Shri Vikaspratap Singh",
+      "image": "assets/projects/residence_vikaspratap_singh.jpg",
+      "gallery": [
+        "assets/projects/residence_vikaspratap_singh.jpg"
+      ],
+      "featured": false,
+      "tagline": "Palatial symmetry, arched carriage portico, and expansive manicured lawn estate",
+      "description": "A majestic private country estate in Satna influenced by classical symmetry, classical arched verandas, a grand drive-through carriage porch, and ambient ground spotlighting along lush manicured lawns.",
+      "details": {
+        "Area": "8,500 Sq. Ft.",
+        "Floors": "G + 1 Luxury Estate",
+        "Key Elements": "Classical Archway Carriage Porch, Balustrade Balconies, Central Axial Symmetry, Estate Driveway"
+      }
+    },
+    {
+      "id": "proj-rupesh-agrawal",
+      "title": "Vertical Fin Contemporary Duplex",
+      "category": "residential",
+      "category_label": "Residential Architecture",
+      "location": "Bhopal, M.P.",
+      "client": "Shri Rupesh Agrawal",
+      "image": "assets/projects/residence_rupesh_agrawal.jpg",
+      "gallery": [
+        "assets/projects/residence_rupesh_agrawal.jpg"
+      ],
+      "featured": false,
+      "tagline": "Illuminated vertical fin screen with panoramic terrace verandas",
+      "description": "A corner plot contemporary duplex residence in Bhopal highlighting a dynamic illuminated vertical fin screen wall, expansive glass balustrades, textured slate cladding, and deep shaded balconies.",
+      "details": {
+        "Area": "3,800 Sq. Ft.",
+        "Floors": "Duplex Residence",
+        "Key Elements": "Illuminated Vertical Fin Screen, Corner Orientation, Deep Overhangs, Slate Tile Accents"
+      }
+    },
+    {
+      "id": "proj-commercial-ravindra-soni",
+      "title": "Commercial Plaza & Boutique Hotel",
+      "category": "commercial",
+      "category_label": "Commercial & Institutional",
+      "location": "Ambikapur, C.G.",
+      "client": "Shri Ravindra Soni",
+      "image": "assets/projects/commercial_hotel_ravindra_soni.jpg",
+      "gallery": [
+        "assets/projects/commercial_hotel_ravindra_soni.jpg"
+      ],
+      "featured": false,
+      "tagline": "Ground-floor retail arcade with luxury upper boutique hospitality suites",
+      "description": "A mixed-use commercial development strategically positioned on a busy urban corridor in Ambikapur. Features ground-level retail storefronts with recessed roller shutters and upper floors accommodating a contemporary boutique hotel with modular ACP and stone facade paneling.",
+      "details": {
+        "Area": "14,000 Sq. Ft.",
+        "Floors": "G + 2 Mixed Use",
+        "Key Elements": "Ground Retail Arcade, Hotel Suites, Modular ACP Grid Facade, Corner Circulation"
+      }
+    },
+    {
+      "id": "proj-commercial-bhajan-agrawal",
+      "title": "Corporate Glass Tower",
+      "category": "commercial",
+      "category_label": "Commercial & Institutional",
+      "location": "Ambikapur, C.G.",
+      "client": "Shri Bhajan Agrawal",
+      "image": "assets/projects/commercial_bhajan_agrawal.jpg",
+      "gallery": [
+        "assets/projects/commercial_bhajan_agrawal.jpg",
+        "assets/projects/commercial_facade_modern_glass.jpg"
+      ],
+      "featured": false,
+      "tagline": "High-performance structural glass curtain wall corporate headquarters",
+      "description": "An imposing commercial office building designed for corporate and financial clients in Ambikapur. Highlights include a full-height double-glazed reflective curtain wall, contrasting horizontal louvre fins, and generous ground-floor customer banking lobby.",
+      "details": {
+        "Area": "18,500 Sq. Ft.",
+        "Floors": "G + 4 Commercial Storeys",
+        "Key Elements": "Curtain Wall Glazing, Shading Louvres, Ground Retail, Corporate Executive Suites"
+      }
+    },
+    {
+      "id": "proj-luxury-drawing-room",
+      "title": "Sophisticated Drawing Room & Lounge",
+      "category": "interior",
+      "category_label": "Luxury Interiors",
+      "location": "Bhilai, C.G.",
+      "client": "Private Client",
+      "image": "assets/projects/luxury_drawing_room_1.jpg",
+      "gallery": [
+        "assets/projects/luxury_drawing_room_1.jpg",
+        "assets/projects/luxury_drawing_room_2.jpg",
+        "assets/projects/luxury_drawing_room_3.jpg",
+        "assets/plans/drawing_room_plan.jpg"
+      ],
+      "featured": true,
+      "tagline": "Italian marble backdrop, fluted wall molding, and stepped multi-tier cove ceiling",
+      "description": "Commissioned to create an opulent yet calm drawing room for executive hosting. Features full-height bookmatched Italian marble media wall, delicate gold metal wall moldings, crystal chandeliers, acoustic drapery, and custom low-profile seating.",
+      "details": {
+        "Dimensions": "16'0\" x 14'7.5\"",
+        "Materials": "Italian Statuario Marble, Brushed Brass Accents, Natural Veneer, Warm 3000K LED Cove",
+        "Scope": "Complete Turnkey Interior & Furniture Layout"
+      }
+    },
+    {
+      "id": "proj-indoor-courtyard-staircase",
+      "title": "Biophilic Floating Staircase & Water Body",
+      "category": "interior",
+      "category_label": "Luxury Interiors",
+      "location": "Raipur, C.G.",
+      "client": "Private Residence",
+      "image": "assets/projects/staircase_greenery_courtyard1.jpg",
+      "gallery": [
+        "assets/projects/staircase_greenery_courtyard1.jpg",
+        "assets/projects/staircase_greenery_courtyard2.jpg",
+        "assets/plans/interior_ground_floor_plate.jpg"
+      ],
+      "featured": true,
+      "tagline": "Cantilevered floating marble stairs integrated with living greenery courtyard & indoor water body",
+      "description": "Transforming the transitional under-stair space into the artistic heart of the villa. Features natural stone cladding with up-facing spotlights, cantilevered steps, indoor palm planters, river pebbles, and an organic curved upholstered banquette seating lounge.",
+      "details": {
+        "Concept": "Biophilic Architecture",
+        "Key Elements": "Living Green Wall, River Pebble Base, Floating Steps, Custom Curved Banquette"
+      }
+    },
+    {
+      "id": "proj-master-bedroom-gautam-singh",
+      "title": "Warm Oak Suite for Dr. Gautam Singh Paikra",
+      "category": "interior",
+      "category_label": "Luxury Interiors",
+      "location": "Raipur, C.G.",
+      "client": "Dr. Gautam Singh Paikra",
+      "image": "assets/projects/bedroom_dr_gautam_singh_view1.jpg",
+      "gallery": [
+        "assets/projects/bedroom_dr_gautam_singh_view1.jpg",
+        "assets/projects/bedroom_dr_gautam_singh_view2.jpg"
+      ],
+      "featured": false,
+      "tagline": "Natural oak wood cabinetry, floating vanity dresser, and horizontal textured wall paneling",
+      "description": "A serene master bedroom suite defined by natural blonde oak wardrobe finishes, concealed handle grooves, floating dressing table with backlit mirror, and expansive garden view windows bringing natural light deep into the room.",
+      "details": {
+        "Scope": "Full Master Suite Interior",
+        "Materials": "Natural Oak Veneer, Matt PU Finish, Corian Surfaces, Warm Spotlights"
+      }
+    },
+    {
+      "id": "proj-round-bed-suite",
+      "title": "Royal Round-Bed Master Bedroom",
+      "category": "interior",
+      "category_label": "Luxury Interiors",
+      "location": "Raipur, C.G.",
+      "client": "Shri Krishnapratap Soni",
+      "image": "assets/projects/bedroom_krishnapratap_soni_round.jpg",
+      "gallery": [
+        "assets/projects/bedroom_krishnapratap_soni_round.jpg",
+        "assets/projects/bedroom_krishnapratap_soni_geometric.jpg"
+      ],
+      "featured": false,
+      "tagline": "Custom circular statement bed with floor-to-ceiling CNC carved jaali panels",
+      "description": "An exquisite blend of traditional luxury craftsmanship and modern precision. Anchored by a bespoke round platform bed, framed by backlit CNC fretwork jaali panels, fluted vertical timber slats, and illuminated overhead canopy.",
+      "details": {
+        "Bed Type": "Custom Circular Platform Bed",
+        "Craftsmanship": "CNC Jali Lattice, Fluted Wall Slats, Soft Velvet Padding, Indirect Ceiling Illumination"
+      }
+    },
+    {
+      "id": "proj-modular-kitchen-dining",
+      "title": "Teal Island Kitchen & Dining Suite",
+      "category": "interior",
+      "category_label": "Luxury Interiors",
+      "location": "Bhilai, C.G.",
+      "client": "Private Client",
+      "image": "assets/projects/dining_hall_perspective.jpg",
+      "gallery": [
+        "assets/projects/dining_hall_perspective.jpg",
+        "assets/projects/modular_kitchen_dining_view1.jpg",
+        "assets/projects/modular_kitchen_cabinetry.jpg",
+        "assets/projects/dining_credenza_mirror.jpg",
+        "assets/plans/kitchen_furniture_layout_cad.jpg",
+        "assets/plans/kitchen_electrical_cad.jpg"
+      ],
+      "featured": false,
+      "tagline": "Contemporary teal lacquer modular cabinetry with central quartz island & CAD layouts",
+      "description": "An open-concept kitchen and dining suite executed with precision technical detailing. Includes complete CAD furniture & electrical layout schematics, acrylic teal soft-close shutters, built-in breakfast bar island, and designer dining credenza.",
+      "details": {
+        "Dimensions": "12'5\" x 11'0\" Kitchen + 17'8.5\" x 13'9\" Dining",
+        "Documentation": "CAD Furniture Layout & Electrical Details Included",
+        "Hardware": "Soft-close Tandem Boxes, Quartz Countertops, Designer Pendant Lighting"
+      }
+    },
+    {
+      "id": "proj-panoramic-bedroom",
+      "title": "Panoramic Bay Window Master Suite",
+      "category": "interior",
+      "category_label": "Luxury Interiors",
+      "location": "Raipur, C.G.",
+      "client": "Private Residence",
+      "image": "assets/projects/bedroom_panoramic_window.jpg",
+      "gallery": [
+        "assets/projects/bedroom_panoramic_window.jpg",
+        "assets/projects/bedroom_emerald_luxury.jpg",
+        "assets/projects/bedroom_classic_chandelier.jpg",
+        "assets/projects/living_lounge_blue_cove_large.jpg"
+      ],
+      "featured": false,
+      "tagline": "Curved bay sitting alcove with timber slatted ceiling canopy and warm indirect glow",
+      "description": "An intimate bedroom retreat built around a panoramic picture window with built-in bay seating. The bed headboard flows into a timber slat accent wall that wraps seamlessly onto the ceiling with recessed cove light ribbons.",
+      "details": {
+        "Features": "Curved Window Bay Bench, Wrapped Timber Slat Ceiling, Tufted Low-profile Bed"
+      }
+    },
+    {
+      "id": "proj-executive-office-cabins",
+      "title": "Corporate Executive Cabins & Boardrooms",
+      "category": "commercial",
+      "category_label": "Commercial & Institutional",
+      "location": "Durg, C.G.",
+      "client": "Corporate Offices",
+      "image": "assets/projects/office_cabin_interior_1.jpg",
+      "gallery": [
+        "assets/projects/office_cabin_interior_1.jpg",
+        "assets/projects/office_cabin_interior_2.jpg",
+        "assets/projects/office_executive_desk.jpg"
+      ],
+      "featured": false,
+      "tagline": "Modern executive workspaces with acoustic paneling and ergonomic layouts",
+      "description": "Tailored commercial interiors designed for high productivity and executive prestige, incorporating integrated cable management, veneer desks, and understated ambient lighting.",
+      "details": {
+        "Scope": "Executive MD Cabins & Client Discussion Lounges"
+      }
+    },
+    {
+      "id": "proj-row-houses-rajesh-gupta",
+      "title": "Contemporary Modern Row Houses",
+      "category": "residential",
+      "category_label": "Residential Architecture",
+      "location": "Raipur, C.G.",
+      "client": "Shri Rajesh Gupta",
+      "image": "assets/projects/row_houses_rajesh_gupta_raipur.jpg",
+      "gallery": [
+        "assets/projects/row_houses_rajesh_gupta_raipur.jpg"
+      ],
+      "featured": false,
+      "tagline": "Rhythmic modern row housing with arched entryways and vibrant accent color blocks",
+      "description": "A rhythmic modern housing enclave designed with playful roof profiles, circular porthole windows, individual gated driveways, and manicured street landscaping.",
+      "details": {
+        "Typology": "Multi-Unit Row Housing",
+        "Location": "Raipur, C.G."
+      }
+    },
+    {
+      "id": "proj-residence-ram-agrawal",
+      "title": "Suburban Contemporary Duplex",
+      "category": "residential",
+      "category_label": "Residential Architecture",
+      "location": "Raipur, C.G.",
+      "client": "Shri Ram Agrawal",
+      "image": "assets/projects/residence_ram_agrawal.jpg",
+      "gallery": [
+        "assets/projects/residence_ram_agrawal.jpg"
+      ],
+      "featured": false,
+      "tagline": "Exposed concrete finish with organic branch-like balcony pergolas",
+      "description": "A pair of contemporary duplex residences featuring board-formed concrete facade panels, artistic branching terrace canopies, and recessed wooden balconies.",
+      "details": {
+        "Typology": "Twin Duplex Residences",
+        "Location": "Raipur, C.G."
+      }
+    },
+    {
+      "id": "proj-residence-aviral-sachdev",
+      "title": "Triplex Villa with Stone & Warm Dusk Lighting",
+      "category": "residential",
+      "category_label": "Residential Architecture",
+      "location": "Ambikapur, C.G.",
+      "client": "Shri Aviral Sachdev",
+      "image": "assets/projects/residence_aviral_sachdev.jpg",
+      "gallery": [
+        "assets/projects/residence_aviral_sachdev.jpg"
+      ],
+      "featured": false,
+      "tagline": "Multi-tier residential massing with integrated exterior sconces and stone masonry",
+      "description": "Sophisticated evening architecture showing warm 2700K perimeter lighting accentuating stone clad columns, timber window frames, and upper terrace lounge.",
+      "details": {
+        "Typology": "Triplex Villa",
+        "Location": "Ambikapur, C.G."
+      }
+    }
+  ],
+  "technical_drawings": [
+    {
+      "title": "Front Elevation & Cross-Sections \u2014 Muskan Agrawal Residence",
+      "category": "CAD Front Elevation & Section Detailing",
+      "image": "assets/plans/residence_muskan_agrawal_cad_elevation.jpg",
+      "description": "Precision architectural CAD front elevation detailing plinth levels, floor-to-floor datum heights (13'-6.5\"), cross-sections x-x and y-y, and stepped terrace parapet levels (+2', +4', +6')."
+    },
+    {
+      "title": "Ground Floor 3D Cutaway Plan - Luxury Villa",
+      "category": "3D Floor Zoning",
+      "image": "assets/plans/villa_ground_floor_3d.jpg",
+      "description": "Comprehensive spatial layout indicating entrance porch, double-height drawing room, open kitchen, dining courtyard, master suite, and puja room."
+    },
+    {
+      "title": "First Floor 3D Cutaway Plan - Luxury Villa",
+      "category": "3D Floor Zoning",
+      "image": "assets/plans/villa_first_floor_3d.jpg",
+      "description": "Upper level zoning displaying private family home theater, master suite with walk-in dress, secondary bedrooms, and open party terrace."
+    },
+    {
+      "title": "CAD Elevation & Section - Institutional College",
+      "category": "Municipal & CAD Elevations",
+      "image": "assets/plans/cad_elevation_college.jpg",
+      "description": "Precision architectural CAD front elevation, splayed wing geometry, and plinth to parapet datum levels (+14200 MUMTY LEVEL)."
+    },
+    {
+      "title": "Kitchen CAD Furniture & Electrical Schematics",
+      "category": "Working Details",
+      "image": "assets/plans/kitchen_furniture_layout_cad.jpg",
+      "description": "First-floor kitchen layout with detailed switchboard points (SB1-SB7), microwave/mixer counter clearances, and appliance positioning."
+    },
+    {
+      "title": "Ground Floor Comprehensive Interior Layout Plate",
+      "category": "Interior Schematics",
+      "image": "assets/plans/interior_ground_floor_plate.jpg",
+      "description": "Master floor plate linking CAD plan to 3D photorealistic perspective views of each room."
+    },
+    {
+      "title": "First Floor Comprehensive Interior Layout Plate",
+      "category": "Interior Schematics",
+      "image": "assets/plans/interior_first_floor_plate.jpg",
+      "description": "First floor layout linking upper lounge, waterbody courtyard overlook, and luxury bedroom wings."
+    }
+  ],
+  "services": [
+    {
+      "title": "Architectural Design & Planning",
+      "icon": "building",
+      "description": "Complete architectural concept, spatial zoning, climate-responsive layouts, and municipal sanction drawings for luxury residences, villas, and commercial complexes."
+    },
+    {
+      "title": "Interior Architecture & Turnkey Execution",
+      "icon": "sofa",
+      "description": "Bespoke interior design, custom furniture, false ceiling lighting design, modular kitchens, luxury millwork, and on-site contractor coordination."
+    },
+    {
+      "title": "Photorealistic 3D Visualization & Walkthroughs",
+      "icon": "box",
+      "description": "Cutting-edge 3D modeling and rendering in 3ds Max and SketchUp that allows clients to experience their built environment with 100% fidelity before ground is broken."
+    },
+    {
+      "title": "Landscape & Rooftop Terrace Design",
+      "icon": "trees",
+      "description": "Seamless integration of indoor biophilic courtyards, rooftop swimming pools, timber sun decks, kitchen gardens, and illuminated boundary walls."
+    },
+    {
+      "title": "Structural & Municipal Working Drawings",
+      "icon": "pen-tool",
+      "description": "Precise CAD working drawings, structural coordination, electrical and plumbing layouts, and elevation details ensuring error-free on-site execution."
+    },
+    {
+      "title": "Turnkey Project Supervision & Quality Control",
+      "icon": "check-circle",
+      "description": "Rigorous on-site technical inspection, material verification, contractor coordination, and structural milestone tracking from RCC framework to handover."
+    }
+  ]
+}
