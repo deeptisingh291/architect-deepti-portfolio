@@ -40,25 +40,25 @@
 }
 
 /* Light Theme: Architectural Linen & Alabaster Paper */
-:root.theme-light {
+:root.theme-light, html.theme-light, body.theme-light {
   --bg-primary: #f8f6f0;
   --bg-secondary: #ede9df;
   --bg-tertiary: #ffffff;
   --bg-card: #ffffff;
   --bg-card-hover: #faf9f6;
-  --bg-glass: rgba(248, 246, 240, 0.9);
-  --bg-glass-card: rgba(255, 255, 255, 0.85);
+  --bg-glass: rgba(248, 246, 240, 0.92);
+  --bg-glass-card: rgba(255, 255, 255, 0.9);
   
   --accent-gold: #9e7949;
   --accent-gold-light: #b89363;
   --accent-gold-dark: #785a30;
-  --accent-gold-glow: rgba(158, 121, 73, 0.12);
+  --accent-gold-glow: rgba(158, 121, 73, 0.15);
   
   --text-primary: #18181c;
-  --text-secondary: #52525e;
-  --text-muted: #71717e;
+  --text-secondary: #4a4a55;
+  --text-muted: #6e6e7c;
   
-  --border-subtle: rgba(0, 0, 0, 0.09);
+  --border-subtle: rgba(0, 0, 0, 0.08);
   --border-accent: rgba(158, 121, 73, 0.4);
   --grid-line: rgba(0, 0, 0, 0.045);
   --cad-cursor-color: #9e7949;
@@ -93,48 +93,66 @@ body {
 /* --------------------------------------------------------------------------
    THEME ADAPTIVE CLASSES
    -------------------------------------------------------------------------- */
-.theme-light body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-}
-
 /* --------------------------------------------------------------------------
    THEME ADAPTIVE CLASSES: ARCHITECTURAL LINEN & ALABASTER LIGHT THEME
    -------------------------------------------------------------------------- */
 .theme-light body {
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
 }
 
-/* Backgrounds */
+/* Backgrounds & Section Fills */
 .theme-light .bg-\[\#0a0a0c\],
 .theme-light .bg-\[\#0a0a0c\]\/80,
-.theme-light .bg-\[\#0a0a0c\]\/90 {
+.theme-light .bg-\[\#0a0a0c\]\/90,
+.theme-light .bg-\[\#08080a\] {
   background-color: var(--bg-primary) !important;
 }
 
-.theme-light #navbar {
-  background-color: rgba(248, 246, 240, 0.94) !important;
-  border-color: rgba(0, 0, 0, 0.08) !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+.theme-light .bg-\[\#0e0e12\] {
+  background-color: #f3efe6 !important;
 }
 
-.theme-light .bg-\[\#121216\] {
-  background-color: var(--bg-card) !important;
+.theme-light .bg-\[\#121216\],
+.theme-light .bg-\[\#141418\] {
+  background-color: #ffffff !important;
   border-color: rgba(0, 0, 0, 0.08) !important;
 }
 
-.theme-light .bg-\[\#16161c\] {
+.theme-light .bg-\[\#16161c\],
+.theme-light .bg-\[\#1a1a20\] {
   background-color: #ede8dc !important;
 }
 
-.theme-light .bg-\[\#141418\] {
-  background-color: #ffffff !important;
+/* Navbar */
+.theme-light #navbar {
+  background-color: rgba(248, 246, 240, 0.95) !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
 }
-
-.theme-light .bg-\[\#08080a\] {
-  background-color: #eae5d8 !important;
-  color: #55555e !important;
+.theme-light #navbar a span.font-serif {
+  color: #18181c !important;
+}
+.theme-light #navbar a div.font-serif {
+  background-color: #ffffff !important;
+  border-color: var(--accent-gold) !important;
+  color: var(--accent-gold) !important;
+}
+.theme-light .nav-link {
+  color: #4a4a55 !important;
+}
+.theme-light .nav-link:hover {
+  color: var(--accent-gold) !important;
+}
+.theme-light a[href*="wa.me"] {
+  background-color: #ffffff !important;
+  color: #15803d !important;
+  border-color: rgba(21, 128, 61, 0.4) !important;
+}
+.theme-light .theme-toggle-btn {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  color: #18181c !important;
 }
 
 /* HERO SECTION IN LIGHT THEME */
@@ -142,28 +160,31 @@ body {
   background-color: var(--bg-primary) !important;
 }
 
+.theme-light #hero .hero-bg-img,
 .theme-light #hero img[alt="Minimalist White Villa"] {
-  opacity: 0.15 !important;
-  filter: contrast(110%) brightness(105%) !important;
+  opacity: 0.18 !important;
+  filter: contrast(105%) brightness(105%) !important;
 }
 
 /* Override dark gradients in hero with warm architectural linen gradients */
+.theme-light #hero .hero-gradient-overlay,
 .theme-light #hero .bg-gradient-to-t {
-  background: linear-gradient(to top, #f8f6f0 0%, rgba(248, 246, 240, 0.88) 50%, rgba(248, 246, 240, 0.65) 100%) !important;
+  background: linear-gradient(to top, #f8f6f0 0%, rgba(248, 246, 240, 0.9) 50%, rgba(248, 246, 240, 0.62) 100%) !important;
 }
 
+.theme-light #hero .hero-radial-overlay,
 .theme-light #hero .bg-\[radial-gradient\(circle_at_center\,transparent_0\%\,\#0a0a0c_90\%\)\] {
-  background: radial-gradient(circle at center, transparent 0%, rgba(248, 246, 240, 0.94) 85%) !important;
+  background: radial-gradient(circle at center, rgba(248, 246, 240, 0.2) 0%, rgba(248, 246, 240, 0.95) 90%) !important;
 }
 
 .theme-light #hero .ambient-hero-glow {
-  background: radial-gradient(circle, rgba(158, 121, 73, 0.16) 0%, rgba(158, 121, 73, 0.04) 50%, transparent 70%) !important;
+  background: radial-gradient(circle, rgba(158, 121, 73, 0.18) 0%, rgba(158, 121, 73, 0.04) 50%, transparent 70%) !important;
 }
 
 .theme-light #hero .inline-flex {
-  background-color: rgba(255, 255, 255, 0.9) !important;
-  border-color: rgba(158, 121, 73, 0.3) !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  background-color: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(158, 121, 73, 0.35) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
 /* Hero Typography */
@@ -182,17 +203,19 @@ body {
   background: linear-gradient(135deg, #18181c 0%, #785a30 35%, #9e7949 60%, #b89363 85%, #18181c 100%) !important;
   background-size: 200% auto !important;
   -webkit-background-clip: text !important;
+  background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
 }
 
 .theme-light #hero p {
-  color: #4a4a55 !important;
+  color: #3f3f4a !important;
 }
 
 /* Hero Buttons */
 .theme-light a[href="#render-to-real"] {
   background-color: #ffffff !important;
-  border-color: rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
   color: #18181c !important;
 }
 .theme-light a[href="#render-to-real"]:hover {
@@ -216,35 +239,72 @@ body {
 .theme-light #hero .font-display.text-5xl {
   background: linear-gradient(135deg, #18181c 0%, #785a30 70%, #9e7949 100%) !important;
   -webkit-background-clip: text !important;
+  background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
 }
 
 .theme-light #hero .text-zinc-500 {
-  color: #71717a !important;
+  color: #6e6e78 !important;
 }
 
-/* Navbar Elements */
-.theme-light #navbar a span.font-serif {
+/* CAD & Blueprints Section */
+.theme-light #blueprints {
+  background-color: #f2f5fa !important;
+}
+.theme-light .blueprint-grid-bg {
+  background-color: #ebf2fb !important;
+  background-image: 
+    linear-gradient(to right, rgba(30, 80, 160, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 80, 160, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(30, 80, 160, 0.16) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 80, 160, 0.16) 1px, transparent 1px) !important;
+}
+.theme-light #blueprints .bg-\[\#0e1624\],
+.theme-light #blueprints .bg-\[\#0a101a\] {
+  background-color: #ffffff !important;
+  border-color: rgba(30, 64, 175, 0.15) !important;
+}
+.theme-light #blueprints .bg-\[\#070c14\] {
+  background-color: #f8fafc !important;
+}
+.theme-light .blueprint-tab-btn:not(.bg-\[\#c5a880\]) {
+  background-color: #ffffff !important;
+  color: #52525b !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+.theme-light .blueprint-tab-btn:not(.bg-\[\#c5a880\]):hover {
   color: #18181c !important;
-}
-
-.theme-light #navbar a div.font-serif {
-  background-color: #ffffff !important;
   border-color: var(--accent-gold) !important;
-  color: var(--accent-gold) !important;
 }
 
-.theme-light .nav-link {
-  color: #4a4a55 !important;
+/* Render to Reality */
+.theme-light #render-to-real {
+  background-color: #f3efe6 !important;
 }
-.theme-light .nav-link:hover {
-  color: var(--accent-gold) !important;
-}
-
-.theme-light a[href*="wa.me"] {
+.theme-light .r2r-select-btn:not(.bg-\[\#c5a880\]) {
   background-color: #ffffff !important;
-  color: #15803d !important;
-  border-color: rgba(21, 128, 61, 0.4) !important;
+  color: #52525b !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+.theme-light #render-to-real .bg-\[\#141418\] {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* About Section & Portrait Photo */
+.theme-light #about {
+  background-color: var(--bg-primary) !important;
+}
+.theme-light #about .relative.group .text-white,
+.theme-light #about .relative.group h3 {
+  color: #ffffff !important;
+}
+.theme-light #about .relative.group .text-zinc-400 {
+  color: #e4e4e7 !important;
+}
+.theme-light #about .ring-\[\#0a0a0c\] {
+  --tw-ring-color: #f8f6f0 !important;
 }
 
 /* Cards & Sections */
@@ -268,25 +328,37 @@ body {
 
 /* General Text Replacements */
 .theme-light .text-white {
-  color: #19191d !important;
+  color: #18181c !important;
 }
 
+.theme-light .text-zinc-200,
 .theme-light .text-zinc-300 {
-  color: #3f3f46 !important;
+  color: #383842 !important;
 }
 
 .theme-light .text-zinc-400 {
-  color: #52525b !important;
+  color: #555562 !important;
 }
 
 .theme-light .text-zinc-500 {
-  color: #71717a !important;
+  color: #71717e !important;
 }
 
 .theme-light .border-white\/5,
 .theme-light .border-white\/10,
 .theme-light .border-white\/15,
-.theme-light .border-white\/20 {
+.theme-light .border-white\/20,
+.theme-light .border-white\/30 {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Modals */
+.theme-light #project-modal .bg-\[\#121216\] {
+  background-color: #ffffff !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+.theme-light #project-modal .bg-\[\#0a0a0c\] {
+  background-color: #f7f5ee !important;
   border-color: rgba(0, 0, 0, 0.08) !important;
 }
 
@@ -296,14 +368,14 @@ body {
 .theme-light textarea {
   background-color: #ffffff !important;
   color: #18181c !important;
-  border-color: rgba(0, 0, 0, 0.14) !important;
+  border-color: rgba(0, 0, 0, 0.15) !important;
 }
 
 .theme-light input:focus,
 .theme-light select:focus,
 .theme-light textarea:focus {
   border-color: var(--accent-gold) !important;
-  box-shadow: 0 0 0 3px rgba(158, 121, 73, 0.12) !important;
+  box-shadow: 0 0 0 3px rgba(158, 121, 73, 0.14) !important;
 }
 
 /* Architectural Grid Background Overlay */

@@ -77,6 +77,13 @@
       // If fetched fails, try reading from window.__PORTFOLIO_DATA__ or use fallback
       portfolioData = window.__PORTFOLIO_DATA__ || fallbackData;
     }
+
+    if (portfolioData && portfolioData.architect && portfolioData.architect.avatar) {
+      const aboutImg = document.querySelector('#about img');
+      if (aboutImg) {
+        aboutImg.src = portfolioData.architect.avatar;
+      }
+    }
   }
 
   // Sticky navbar with blur and scroll spy
