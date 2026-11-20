@@ -566,25 +566,25 @@ HTML_DASHBOARD = """<!DOCTYPE html>
             <img src="/${p.image}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/600x400?text=Render+Preview'">
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
             <div class="absolute top-3 left-3 flex gap-2">
-              <span class="px-2.5 py-1 rounded text-[10px] font-mono bg-black/80 text-[#c5a880] border border-[#c5a880]/30 uppercase font-semibold">\${p.category}</span>
+              <span class="px-2.5 py-1 rounded text-[10px] font-mono bg-black/80 text-[#c5a880] border border-[#c5a880]/30 uppercase font-semibold">${p.category}</span>
             </div>
             <div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-black/80 text-zinc-300 text-[10px] font-mono flex items-center gap-1 border border-white/10">
               <svg class="w-3 h-3 text-[#c5a880]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-              <span>\${galleryCount} Photos</span>
+              <span>${galleryCount} Photos</span>
             </div>
           </div>
           <div class="p-5 flex-1 flex flex-col justify-between">
             <div>
-              <div class="text-[11px] font-mono text-[#c5a880]">\${p.location}\${areaText}</div>
-              <h3 class="font-bold text-white text-base font-['Playfair_Display'] mt-1 leading-snug">\${p.title}</h3>
-              <p class="text-xs text-zinc-400 mt-2 line-clamp-2 leading-relaxed">\${p.tagline || p.description}</p>
+              <div class="text-[11px] font-mono text-[#c5a880]">${p.location || ''}${areaText}</div>
+              <h3 class="font-bold text-white text-base font-['Playfair_Display'] mt-1 leading-snug">${p.title}</h3>
+              <p class="text-xs text-zinc-400 mt-2 line-clamp-2 leading-relaxed">${p.tagline || p.description || ''}</p>
             </div>
             <div class="pt-4 mt-4 border-t border-white/10 flex justify-between items-center text-xs">
-              <button onclick="editProject('\${p.id}')" class="text-[#c5a880] hover:text-[#dfc8a5] font-semibold flex items-center gap-1">
+              <button onclick="editProject('${p.id}')" class="text-[#c5a880] hover:text-[#dfc8a5] font-semibold flex items-center gap-1">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
                 <span>Edit Project</span>
               </button>
-              <button onclick="promptDeleteProject('\${p.id}', '\${p.title.replace(/'/g, "\\\\'")}')" class="text-red-400 hover:text-red-300 font-mono text-[11px] flex items-center gap-1">
+              <button onclick="promptDeleteProject('${p.id}', '${(p.title || '').replace(/'/g, "\\'")}')" class="text-red-400 hover:text-red-300 font-mono text-[11px] flex items-center gap-1">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/></svg>
                 <span>Delete</span>
               </button>
@@ -707,18 +707,18 @@ HTML_DASHBOARD = """<!DOCTYPE html>
         if (isCover) currentCover = path;
 
         const item = document.createElement('div');
-        item.className = `relative aspect-video rounded-lg overflow-hidden border-2 \${isCover ? 'border-[#c5a880]' : 'border-white/10'} bg-black group`;
+        item.className = `relative aspect-video rounded-lg overflow-hidden border-2 ${isCover ? 'border-[#c5a880]' : 'border-white/10'} bg-black group`;
         item.innerHTML = `
-          <img src="/\${path}" class="w-full h-full object-cover">
+          <img src="/${path}" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-between p-1.5">
             <div class="flex justify-end">
-              <button type="button" onclick="removePhoto('\${path}')" class="w-5 h-5 rounded-full bg-red-600 text-white flex items-center justify-center font-bold" title="Remove">&times;</button>
+              <button type="button" onclick="removePhoto('${path}')" class="w-5 h-5 rounded-full bg-red-600 text-white flex items-center justify-center font-bold" title="Remove">&times;</button>
             </div>
-            <button type="button" onclick="setAsCover('\${path}')" class="w-full py-1 rounded bg-[#c5a880] text-black text-[10px] font-bold uppercase">
-              \${isCover ? '★ Cover Photo' : 'Make Cover'}
+            <button type="button" onclick="setAsCover('${path}')" class="w-full py-1 rounded bg-[#c5a880] text-black text-[10px] font-bold uppercase">
+              ${isCover ? '★ Cover Photo' : 'Make Cover'}
             </button>
           </div>
-          \${isCover ? '<div class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-[#c5a880] text-black text-[9px] font-bold uppercase font-mono">Cover</div>' : ''}
+          ${isCover ? '<div class="absolute top-1.5 left-1.5 px-1.5 py-0.5 rounded bg-[#c5a880] text-black text-[9px] font-bold uppercase font-mono">Cover</div>' : ''}
         `;
         grid.appendChild(item);
       });
@@ -902,25 +902,25 @@ HTML_DASHBOARD = """<!DOCTYPE html>
         card.className = 'p-5 bg-black/40 border border-white/10 rounded-xl space-y-4';
         card.innerHTML = `
           <div class="flex justify-between items-center pb-2 border-b border-white/10">
-            <span class="font-mono text-[#c5a880] text-xs font-bold uppercase">CASE 0\${idx + 1}</span>
+            <span class="font-mono text-[#c5a880] text-xs font-bold uppercase">CASE 0${idx + 1}</span>
           </div>
           <div>
             <label class="block font-mono text-zinc-300 mb-1">CASE TITLE</label>
-            <input type="text" id="r2r-title-\${idx}" value="\${item.title}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none">
+            <input type="text" id="r2r-title-${idx}" value="${item.title}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none">
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block font-mono text-zinc-300 mb-1">3D RENDER IMAGE PATH</label>
-              <input type="text" id="r2r-render-\${idx}" value="\${item.render_img}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white font-mono focus:border-[#c5a880] outline-none">
+              <input type="text" id="r2r-render-${idx}" value="${item.render_img}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white font-mono focus:border-[#c5a880] outline-none">
             </div>
             <div>
               <label class="block font-mono text-zinc-300 mb-1">ACTUAL REAL PHOTO PATH</label>
-              <input type="text" id="r2r-real-\${idx}" value="\${item.real_img}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white font-mono focus:border-[#c5a880] outline-none">
+              <input type="text" id="r2r-real-${idx}" value="${item.real_img}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white font-mono focus:border-[#c5a880] outline-none">
             </div>
           </div>
           <div>
             <label class="block font-mono text-zinc-300 mb-1">EXECUTION FIDELITY DESCRIPTION</label>
-            <textarea id="r2r-desc-\${idx}" rows="2" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none leading-relaxed">\${item.description}</textarea>
+            <textarea id="r2r-desc-${idx}" rows="2" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none leading-relaxed">${item.description}</textarea>
           </div>
         `;
         container.appendChild(card);
@@ -930,10 +930,10 @@ HTML_DASHBOARD = """<!DOCTYPE html>
     async function saveR2RCases() {
       const items = (fullData.render_to_real && fullData.render_to_real.items) || [];
       items.forEach((item, idx) => {
-        item.title = document.getElementById(`r2r-title-\${idx}`).value;
-        item.render_img = document.getElementById(`r2r-render-\${idx}`).value;
-        item.real_img = document.getElementById(`r2r-real-\${idx}`).value;
-        item.description = document.getElementById(`r2r-desc-\${idx}`).value;
+        item.title = document.getElementById(`r2r-title-${idx}`).value;
+        item.render_img = document.getElementById(`r2r-render-${idx}`).value;
+        item.real_img = document.getElementById(`r2r-real-${idx}`).value;
+        item.description = document.getElementById(`r2r-desc-${idx}`).value;
       });
 
       const res = await fetch('/api/save-r2r', {
@@ -960,26 +960,26 @@ HTML_DASHBOARD = """<!DOCTYPE html>
         card.className = 'p-5 bg-black/40 border border-white/10 rounded-xl space-y-3';
         card.innerHTML = `
           <div class="flex justify-between items-center pb-2 border-b border-white/10">
-            <span class="font-mono text-[#c5a880] text-xs font-bold uppercase">DRAWING PLATE 0\${idx + 1}</span>
-            <button onclick="removeBlueprint(\${idx})" class="text-red-400 hover:text-red-300 font-mono text-[11px]">&times; Remove Plate</button>
+            <span class="font-mono text-[#c5a880] text-xs font-bold uppercase">DRAWING PLATE 0${idx + 1}</span>
+            <button onclick="removeBlueprint(${idx})" class="text-red-400 hover:text-red-300 font-mono text-[11px]">&times; Remove Plate</button>
           </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label class="block font-mono text-zinc-300 mb-1">PLATE TITLE</label>
-              <input type="text" id="cad-title-\${idx}" value="\${item.title}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none">
+              <input type="text" id="cad-title-${idx}" value="${item.title}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none">
             </div>
             <div>
               <label class="block font-mono text-zinc-300 mb-1">CATEGORY / DISCIPLINE</label>
-              <input type="text" id="cad-cat-\${idx}" value="\${item.category}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none">
+              <input type="text" id="cad-cat-${idx}" value="${item.category}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none">
             </div>
           </div>
           <div>
             <label class="block font-mono text-zinc-300 mb-1">BLUEPRINT IMAGE PATH</label>
-            <input type="text" id="cad-img-\${idx}" value="\${item.image}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white font-mono focus:border-[#c5a880] outline-none">
+            <input type="text" id="cad-img-${idx}" value="${item.image}" class="w-full p-2.5 bg-black border border-white/15 rounded text-white font-mono focus:border-[#c5a880] outline-none">
           </div>
           <div>
             <label class="block font-mono text-zinc-300 mb-1">TECHNICAL SPECIFICATIONS</label>
-            <textarea id="cad-desc-\${idx}" rows="2" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none leading-relaxed">\${item.description}</textarea>
+            <textarea id="cad-desc-${idx}" rows="2" class="w-full p-2.5 bg-black border border-white/15 rounded text-white focus:border-[#c5a880] outline-none leading-relaxed">${item.description}</textarea>
           </div>
         `;
         container.appendChild(card);
@@ -1006,10 +1006,10 @@ HTML_DASHBOARD = """<!DOCTYPE html>
     async function saveCADDrawings() {
       const list = fullData.technical_drawings || [];
       list.forEach((item, idx) => {
-        item.title = document.getElementById(`cad-title-\${idx}`).value;
-        item.category = document.getElementById(`cad-cat-\${idx}`).value;
-        item.image = document.getElementById(`cad-img-\${idx}`).value;
-        item.description = document.getElementById(`cad-desc-\${idx}`).value;
+        item.title = document.getElementById(`cad-title-${idx}`).value;
+        item.category = document.getElementById(`cad-cat-${idx}`).value;
+        item.image = document.getElementById(`cad-img-${idx}`).value;
+        item.description = document.getElementById(`cad-desc-${idx}`).value;
       });
 
       const res = await fetch('/api/save-blueprints', {
@@ -1095,11 +1095,32 @@ class MasterAdminRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.wfile.write(HTML_DASHBOARD.encode('utf-8'))
             return
         elif self.path == '/api/projects':
+            with open(DATA_FILE, 'r') as f:
+                data = json.load(f)
+
+            # Two-way sync: merge any projects from ENTRIES_DIR (e.g. added via Decap CMS)
+            if os.path.exists(ENTRIES_DIR):
+                existing_ids = {p['id'] for p in data.get('projects', [])}
+                changed = False
+                for fn in sorted(os.listdir(ENTRIES_DIR)):
+                    if fn.endswith('.json'):
+                        fp = os.path.join(ENTRIES_DIR, fn)
+                        try:
+                            with open(fp, 'r') as ef:
+                                ed = json.load(ef)
+                                if ed.get('id') and ed.get('id') not in existing_ids:
+                                    data['projects'].append(ed)
+                                    existing_ids.add(ed['id'])
+                                    changed = True
+                        except Exception:
+                            pass
+                if changed:
+                    self._save_all_data(data)
+
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
-            with open(DATA_FILE, 'r') as f:
-                self.wfile.write(f.read().encode('utf-8'))
+            self.wfile.write(json.dumps(data, indent=2).encode('utf-8'))
             return
         else:
             return super().do_GET()
@@ -1190,6 +1211,30 @@ class MasterAdminRequestHandler(http.server.SimpleHTTPRequestHandler):
                 data['projects'].insert(0, new_proj)
 
             self._save_all_data(data)
+
+            # Sync to individual entry file for Decap CMS / Live
+            try:
+                slug = re.sub(r'[^a-z0-9]+', '-', new_proj.get('title', 'project').lower()).strip('-')
+                entry_path = None
+                if os.path.exists(ENTRIES_DIR):
+                    for fn in os.listdir(ENTRIES_DIR):
+                        if fn.endswith('.json'):
+                            fp = os.path.join(ENTRIES_DIR, fn)
+                            try:
+                                with open(fp, 'r') as ef:
+                                    ed = json.load(ef)
+                                    if ed.get('id') == new_proj['id']:
+                                        entry_path = fp
+                                        break
+                            except Exception:
+                                pass
+                if not entry_path:
+                    entry_path = os.path.join(ENTRIES_DIR, f"{slug}.json")
+                with open(entry_path, 'w', encoding='utf-8') as ef:
+                    json.dump(new_proj, ef, indent=2)
+            except Exception as e:
+                print(f"Warning: Failed to sync entry to {ENTRIES_DIR}: {e}")
+
             self.send_response(200)
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
