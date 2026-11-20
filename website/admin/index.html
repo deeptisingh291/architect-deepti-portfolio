@@ -5,20 +5,150 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin Dashboard &bull; Ar. Deepti Singh Portfolio</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0c'/><text x='50' y='65' font-family='serif' font-size='50' fill='%23c5a880' text-anchor='middle'>DS</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <!-- Netlify Identity Widget for secure authentication -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
-    /* Architectural Admin Styling */
+    /* Architectural Dark Luxury Admin Theme */
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #0a0a0c;
+      font-family: 'Plus Jakarta Sans', sans-serif !important;
+      background: #0a0a0c !important;
+      color: #f5f5f7 !important;
+    }
+    #studio-banner {
+      background: linear-gradient(90deg, #121216 0%, #1c1c24 100%);
+      border-bottom: 1px solid rgba(197, 168, 128, 0.3);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #d4d4d8;
+      z-index: 9999;
+      position: relative;
+    }
+    #studio-banner a {
+      background: #c5a880;
+      color: #0a0a0c;
+      font-weight: bold;
+      padding: 5px 12px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    #studio-banner a:hover {
+      background: #dfc8a5;
+    }
+
+    /* Decap CMS UI Styling overrides */
+    header {
+      background-color: #121216 !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+    div[class*="EditorContainer"] {
+      background-color: #0a0a0c !important;
+    }
+    div[class*="ControlPane"] {
+      background-color: #0e0e12 !important;
+      border-right: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+    div[class*="PreviewPane"] {
+      background-color: #070709 !important;
+    }
+    input, textarea, select {
+      background-color: #16161c !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      border-radius: 6px !important;
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: #c5a880 !important;
+      outline: none !important;
     }
   </style>
 </head>
 <body>
+  <div id="studio-banner">
+    <div>
+      <span style="color:#c5a880; font-weight:bold;">✨ Studio Tip:</span>
+      Aapke laptop par full 5-tab Master Control Panel (multi-photo drag &amp; drop + direct publish) 
+      <code style="background:rgba(255,255,255,0.1); padding:2px 6px; border-radius:4px; font-family:monospace;">http://localhost:9000</code> par active hai.
+    </div>
+    <a href="http://localhost:9000" target="_blank">Open Master Studio Panel &rarr;</a>
+  </div>
+
   <!-- Decap CMS Application Bundle -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
+  <script>
+    // Register Fonts and Website Styles for live preview
+    CMS.registerPreviewStyle("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Cormorant+Garamond:wght@400;600;700&display=swap");
+    CMS.registerPreviewStyle("/css/style.css");
+
+    // Luxury Preview Template for Profile
+    const ProfilePreview = createClass({
+      render: function() {
+        const entry = this.props.entry;
+        const rawAvatar = entry.getIn(['data', 'avatar']);
+        const avatarSrc = rawAvatar ? (this.props.getAsset(rawAvatar) || rawAvatar).toString() : '';
+
+        return h('div', { style: { padding: '40px 24px', background: '#0a0a0c', minHeight: '100vh', color: '#f5f5f7', fontFamily: "'Plus Jakarta Sans', sans-serif" } },
+          h('div', { style: { maxWidth: '440px', margin: '0 auto', background: '#121216', border: '1px solid rgba(197,168,128,0.3)', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' } },
+            h('div', { style: { position: 'relative', aspectRatio: '3/4', overflow: 'hidden', background: '#000' } },
+              avatarSrc ? h('img', { src: avatarSrc, style: { width: '100%', height: '100%', objectFit: 'cover' } }) : null,
+              h('div', { style: { position: 'absolute', inset: 0, background: 'linear-gradient(to top, #0a0a0c 0%, rgba(10,10,12,0.4) 40%, transparent 100%)' } }),
+              h('div', { style: { position: 'absolute', bottom: '24px', left: '24px', right: '24px' } },
+                h('span', { style: { background: 'rgba(0,0,0,0.85)', border: '1px solid rgba(197,168,128,0.4)', color: '#c5a880', fontSize: '10px', padding: '4px 10px', borderRadius: '4px', textTransform: 'uppercase', fontFamily: 'monospace', fontWeight: 'bold' } }, 'LEAD ARCHITECT'),
+                h('h3', { style: { fontSize: '24px', margin: '10px 0 2px 0', fontFamily: "'Playfair Display', serif", color: '#ffffff' } }, entry.getIn(['data', 'name'])),
+                h('p', { style: { color: '#c5a880', fontSize: '12px', margin: 0, fontFamily: 'monospace' } }, entry.getIn(['data', 'title'])),
+                h('p', { style: { color: '#a1a1aa', fontSize: '11px', marginTop: '6px' } }, entry.getIn(['data', 'location']))
+              )
+            ),
+            h('div', { style: { padding: '24px', fontSize: '13px', color: '#d4d4d8', lineHeight: '1.7' } },
+              h('h4', { style: { color: '#c5a880', textTransform: 'uppercase', fontSize: '11px', letterSpacing: '1px', marginBottom: '8px', fontFamily: 'monospace' } }, 'BIOGRAPHY & DESIGN ETHOS'),
+              h('p', { style: { margin: '0 0 16px 0' } }, entry.getIn(['data', 'bio'])),
+              h('div', { style: { padding: '16px', background: '#0a0a0c', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '10px' } },
+                h('h4', { style: { color: '#c5a880', textTransform: 'uppercase', fontSize: '10px', letterSpacing: '1px', marginBottom: '8px', fontFamily: 'monospace' } }, 'DIRECT CONTACT DETAILS'),
+                h('div', { style: { color: '#ffffff', fontSize: '12px' } }, '📞 Phone: ' + (entry.getIn(['data', 'primary_phone']) || '')),
+                h('div', { style: { color: '#ffffff', fontSize: '12px', marginTop: '4px' } }, '✉️ Email: ' + (entry.getIn(['data', 'email']) || ''))
+              )
+            )
+          )
+        );
+      }
+    });
+
+    // Luxury Preview Template for Projects
+    const ProjectPreview = createClass({
+      render: function() {
+        const entry = this.props.entry;
+        const rawCover = entry.getIn(['data', 'image']);
+        const coverSrc = rawCover ? (this.props.getAsset(rawCover) || rawCover).toString() : '';
+
+        return h('div', { style: { padding: '40px 24px', background: '#0a0a0c', minHeight: '100vh', color: '#f5f5f7', fontFamily: "'Plus Jakarta Sans', sans-serif" } },
+          h('div', { style: { maxWidth: '440px', margin: '0 auto', background: '#121216', border: '1px solid rgba(197,168,128,0.3)', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.6)' } },
+            h('div', { style: { position: 'relative', aspectRatio: '16/10', overflow: 'hidden', background: '#000' } },
+              coverSrc ? h('img', { src: coverSrc, style: { width: '100%', height: '100%', objectFit: 'cover' } }) : null,
+              h('div', { style: { position: 'absolute', top: '12px', left: '12px' } },
+                h('span', { style: { background: 'rgba(0,0,0,0.85)', border: '1px solid rgba(197,168,128,0.4)', color: '#c5a880', fontSize: '10px', padding: '4px 10px', borderRadius: '4px', textTransform: 'uppercase', fontFamily: 'monospace', fontWeight: 'bold' } }, entry.getIn(['data', 'category']) || 'PROJECT')
+              )
+            ),
+            h('div', { style: { padding: '24px' } },
+              h('div', { style: { color: '#c5a880', fontSize: '11px', fontFamily: 'monospace' } }, entry.getIn(['data', 'location']) || ''),
+              h('h3', { style: { fontSize: '20px', margin: '6px 0 10px 0', fontFamily: "'Playfair Display', serif", color: '#ffffff' } }, entry.getIn(['data', 'title'])),
+              h('p', { style: { fontSize: '13px', color: '#a1a1aa', lineHeight: '1.6', margin: '0 0 16px 0' } }, entry.getIn(['data', 'tagline']) || entry.getIn(['data', 'description']) || '')
+            )
+          )
+        );
+      }
+    });
+
+    CMS.registerPreviewTemplate('profile', ProfilePreview);
+    CMS.registerPreviewTemplate('projects', ProjectPreview);
+  </script>
 </body>
 </html>
 
