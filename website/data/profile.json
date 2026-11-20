@@ -3,9 +3,13 @@
   "title": "Architect & Interior Designer",
   "experience": "12+ Years of Practice (Since 2013)",
   "location": "Durg - Bhilai & Raipur, Chhattisgarh, India",
-  "avatar": "assets/projects/deepti-photo.jpg",
+  "avatar": "assets/profile/deepti_singh_1.jpg",
   "primary_phone": "+91 8989594919",
   "secondary_phone": "+91 7000098073",
+  "phone": [
+    "+91 8989594919",
+    "+91 7000098073"
+  ],
   "email": "deeptisingh291@gmail.com",
   "bio": "Ar. Deepti Singh is a distinguished Architect and Interior Designer with over 12 years of dedicated practice across residential, commercial, and institutional domains (active in the profession since 2014). Holding a Bachelor of Architecture (First Class) from C.S.V.T.U. Bhilai and specialized Post Graduation in Rural Development from IGNOU Delhi, she bridges contemporary architectural aesthetics with functional, climate-responsive spatial planning. Her portfolio spans ultra-luxury private residences, educational campuses, high-density residential developments, and bespoke interior environments.",
   "philosophy": "Every architectural form should arise naturally from its context, light, and function. We favor clean geometry, all-white minimalist palettes accented by natural timber and ledgestone, and seamless transitions between indoor living and landscaped courtyards.",
@@ -47,10 +51,6 @@
       "grade": "First Class"
     }
   ],
-  "phone": [
-    "+91 8989594919",
-    "+91 7000098073"
-  ],
   "experience_history": [
     {
       "role": "Lead Architect",
@@ -70,5 +70,24 @@
       "period": "Jan 2013 - Jun 2013",
       "description": "Hands-on drafting, architectural modeling, site inspection, and client presentation drawings."
     }
-  ]
+  ],
+  "skills": [
+    {
+      "name": "AutoCAD 2D/3D",
+      "percentage": "95%"
+    },
+    {
+      "name": "Google SketchUp",
+      "percentage": "90%"
+    },
+    {
+      "name": "Autodesk 3ds Max",
+      "percentage": "88%"
+    },
+    {
+      "name": "Autodesk Revit Architecture",
+      "percentage": "82%"
+    }
+  ],
+  "philosophy": "Every architectural form should arise naturally from its context, light, and function. We favor clean geometry, all-white minimalist palettes accented by natural timber and ledgestone, and seamless transitions between indoor living and landscaped courtyards."
 }
