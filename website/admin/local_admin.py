@@ -1092,7 +1092,12 @@ class MasterAdminRequestHandler(http.server.SimpleHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-Type', 'text/html; charset=utf-8')
             self.end_headers()
-            self.wfile.write(HTML_DASHBOARD.encode('utf-8'))
+            idx_file = os.path.join(BASE_DIR, 'admin', 'index.html')
+            if os.path.exists(idx_file):
+                with open(idx_file, 'r', encoding='utf-8') as f:
+                    self.wfile.write(f.read().encode('utf-8'))
+            else:
+                self.wfile.write(HTML_DASHBOARD.encode('utf-8'))
             return
         elif self.path == '/api/projects':
             with open(DATA_FILE, 'r') as f:

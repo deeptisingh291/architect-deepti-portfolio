@@ -66,23 +66,109 @@
     initAOS();
   }
 
-  // Load projects data (fetch with graceful fallback)
+  // Load projects data & profile with cache-busting and live DOM synchronization
   async function loadPortfolioData() {
+    const v = Date.now();
     try {
-      const response = await fetch('data/projects.json');
-      if (!response.ok) throw new Error('Network response not ok');
-      portfolioData = await response.json();
+      const response = await fetch(`data/projects.json?v=${v}`);
+      if (response.ok) {
+        portfolioData = await response.json();
+      } else {
+        portfolioData = window.__PORTFOLIO_DATA__ || fallbackData;
+      }
     } catch (e) {
-      console.warn('Fetch failed (likely file:// protocol). Using embedded dataset.', e);
-      // If fetched fails, try reading from window.__PORTFOLIO_DATA__ or use fallback
+      console.warn('Fetch projects.json failed. Using embedded dataset.', e);
       portfolioData = window.__PORTFOLIO_DATA__ || fallbackData;
     }
 
-    if (portfolioData && portfolioData.architect && portfolioData.architect.avatar) {
-      const aboutImg = document.querySelector('#about img');
-      if (aboutImg) {
-        aboutImg.src = portfolioData.architect.avatar;
+    // Also fetch profile.json to guarantee live bio, experience, and photo sync
+    try {
+      const pRes = await fetch(`data/profile.json?v=${v}`);
+      if (pRes.ok) {
+        const prof = await pRes.json();
+        if (portfolioData) {
+          portfolioData.architect = { ...(portfolioData.architect || {}), ...prof };
+        }
+        applyLiveProfile(prof);
+      } else if (portfolioData && portfolioData.architect) {
+        applyLiveProfile(portfolioData.architect);
       }
+    } catch (e) {
+      if (portfolioData && portfolioData.architect) {
+        applyLiveProfile(portfolioData.architect);
+      }
+    }
+
+    if (portfolioData && portfolioData.stats) {
+      applyLiveStats(portfolioData.stats);
+    }
+  }
+
+  function applyLiveProfile(arch) {
+    if (!arch) return;
+    if (arch.avatar) {
+      const img = document.querySelector('#about img');
+      if (img) img.src = arch.avatar;
+    }
+    if (arch.name) {
+      const el = document.getElementById('profile-name');
+      if (el) el.textContent = arch.name;
+    }
+    if (arch.title) {
+      const el = document.getElementById('profile-title');
+      if (el) el.textContent = arch.title;
+    }
+    if (arch.location) {
+      const el = document.getElementById('profile-location');
+      if (el) el.textContent = arch.location;
+      const cLoc = document.getElementById('contact-location');
+      if (cLoc) cLoc.textContent = arch.location;
+    }
+    if (arch.bio) {
+      const el = document.getElementById('profile-bio');
+      if (el) el.textContent = arch.bio;
+    }
+    if (arch.philosophy) {
+      const el = document.getElementById('profile-philosophy');
+      if (el) el.textContent = `"${arch.philosophy}"`;
+    }
+    if (arch.experience) {
+      const sub = document.getElementById('stat-years-sub');
+      if (sub) sub.textContent = `Active Practice (${arch.experience})`;
+    }
+
+    const p1 = arch.primary_phone || (Array.isArray(arch.phone) ? arch.phone[0] : arch.phone);
+    const p2 = arch.secondary_phone || (Array.isArray(arch.phone) && arch.phone.length > 1 ? arch.phone[1] : '');
+    if (p1) {
+      const cleanP1 = String(p1).replace(/[^0-9+]/g, '');
+      document.querySelectorAll('.live-phone-link').forEach(a => a.href = `tel:${cleanP1}`);
+      document.querySelectorAll('.live-phone-primary').forEach(el => el.textContent = p1);
+      document.querySelectorAll('.live-phone-display').forEach(el => el.textContent = p2 ? `${p1} / ${p2}` : p1);
+    }
+
+    if (arch.email) {
+      document.querySelectorAll('.live-email-link').forEach(a => a.href = `mailto:${arch.email}`);
+      document.querySelectorAll('.live-email-text, .live-email-display').forEach(el => el.textContent = arch.email);
+    }
+  }
+
+  function applyLiveStats(stats) {
+    if (!stats) return;
+    if (stats.years_experience) {
+      const el = document.getElementById('stat-years');
+      if (el) el.textContent = stats.years_experience;
+    }
+    if (stats.projects_designed) {
+      const el = document.getElementById('stat-projects');
+      if (el) el.textContent = stats.projects_designed;
+    }
+    if (stats.render_to_real) {
+      const el = document.getElementById('stat-r2r');
+      if (el) el.textContent = stats.render_to_real;
+    }
+    if (stats.key_metros) {
+      const el = document.getElementById('stat-metros');
+      if (el) el.textContent = stats.key_metros;
     }
   }
 
