@@ -1,0 +1,19 @@
+{
+  "id": "proj-1795178309636",
+  "title": "ss",
+  "category": "commercial",
+  "category_label": "Commercial & Institutional",
+  "location": "sss",
+  "client": "ssds",
+  "image": "assets/projects/crop1.jpg",
+  "gallery": [
+    "assets/projects/crop1.jpg",
+    "assets/projects/crop2.jpg"
+  ],
+  "featured": true,
+  "tagline": "dfdfd",
+  "description": "sdfdfdf",
+  "details": {
+    "Area": "dfgdg"
+  }
+}

@@ -42,10 +42,10 @@
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0c'/><text x='50' y='65' font-family='serif' font-size='50' fill='%23c5a880' text-anchor='middle'>DS</text></svg>">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Luxury Editorial Architectural Typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -67,8 +67,8 @@
             }
           },
           fontFamily: {
-            serif: ['Cinzel', 'serif'],
-            display: ['Syne', 'sans-serif'],
+            serif: ['Cormorant Garamond', 'Cinzel', 'serif'],
+            display: ['Playfair Display', 'serif'],
             sans: ['Plus Jakarta Sans', 'sans-serif'],
             mono: ['JetBrains Mono', 'monospace'],
           }
@@ -319,6 +319,9 @@
        ========================================================================== -->
   <section id="hero" class="relative min-h-[92vh] flex items-center border-b border-white/5 overflow-hidden">
     
+    <!-- Ambient Radial Lighting Glow -->
+    <div class="ambient-hero-glow"></div>
+
     <!-- Background Architectural Photography with Vignette -->
     <div class="absolute inset-0 z-0">
       <img src="assets/projects/minimalist_white_villa.jpg" alt="Minimalist White Villa" class="w-full h-full object-cover object-center opacity-30 filter brightness-90">
@@ -332,37 +335,37 @@
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
       
       <!-- Top Badge / Datum Coordinates -->
-      <div class="inline-flex items-center gap-3 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8">
-        <span class="w-2 h-2 rounded-full bg-[#c5a880]"></span>
+      <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8">
+        <span class="w-2 h-2 rounded-full bg-[#c5a880] animate-pulse"></span>
         <span class="font-mono text-xs tracking-wider text-[#c5a880] uppercase">ARCHITECTURAL PRACTICE &bull; ACTIVE SINCE 2013 &bull; 12+ YEARS OF EXCELLENCE</span>
       </div>
 
       <!-- Main Typographic Headline -->
       <div class="max-w-4xl space-y-6">
-        <h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1]">
+        <h1 class="font-serif text-5xl sm:text-7xl lg:text-8xl font-normal tracking-tight text-white leading-[1.05]">
           Sculpting Space. <br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#c5a880] via-[#dfc8a5] to-zinc-400">
+          <span class="luxury-shimmer-text italic font-display font-bold">
             Executing Reality.
           </span>
         </h1>
         
-        <p class="font-sans text-base sm:text-xl text-zinc-300 max-w-2xl leading-relaxed">
+        <p class="font-sans text-base sm:text-xl text-zinc-300 max-w-2xl leading-relaxed font-light">
           Contemporary architectural design, bespoke residential villas, and turnkey interior environments characterized by clean geometries, all-white minimalist palettes, and uncompromising 1:1 render-to-reality fidelity.
         </p>
 
         <!-- CTA Action Buttons -->
         <div class="pt-4 flex flex-wrap items-center gap-4">
-          <a href="#projects" class="px-8 py-4 bg-[#c5a880] text-[#0a0a0c] font-display font-bold text-sm tracking-wider uppercase hover:bg-[#dfc8a5] transition-all duration-300 flex items-center gap-3 shadow-lg shadow-[#c5a880]/10">
+          <a href="#projects" class="btn-luxury px-8 py-4 bg-[#c5a880] text-[#0a0a0c] font-sans font-bold text-xs tracking-widest uppercase hover:bg-[#dfc8a5] transition-all duration-300 flex items-center gap-3 shadow-xl shadow-[#c5a880]/15 rounded-lg">
             Explore Portfolio
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
           </a>
           
-          <a href="#render-to-real" class="px-8 py-4 bg-[#121216] border border-white/15 text-white font-display font-semibold text-sm tracking-wider uppercase hover:border-[#c5a880] hover:text-[#c5a880] transition-all duration-300 flex items-center gap-2">
+          <a href="#render-to-real" class="btn-luxury px-8 py-4 bg-[#121216]/90 border border-white/20 text-white font-sans font-semibold text-xs tracking-widest uppercase hover:border-[#c5a880] hover:text-[#c5a880] transition-all duration-300 flex items-center gap-2 rounded-lg">
             Render vs Reality
             <svg class="w-4 h-4 text-[#c5a880]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
           </a>
 
-          <a href="assets/documents/Deepti_Singh_Portfolio_Resume.pdf" download class="px-5 py-4 text-xs font-mono text-zinc-400 hover:text-white flex items-center gap-2 underline decoration-[#c5a880] underline-offset-4">
+          <a href="assets/documents/Deepti_Singh_Portfolio_Resume.pdf" download class="px-5 py-4 text-xs font-mono text-zinc-400 hover:text-[#c5a880] flex items-center gap-2 underline decoration-[#c5a880]/50 hover:decoration-[#c5a880] underline-offset-4 transition-colors">
             <svg class="w-4 h-4 text-[#c5a880]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
             Download Resume PDF
           </a>
@@ -372,22 +375,22 @@
       <!-- Quick Metrics Ribbon -->
       <div class="mt-20 pt-10 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-6">
         <div>
-          <div class="font-serif text-3xl sm:text-4xl font-bold text-white">12+</div>
+          <div class="font-display text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#dfc8a5] to-[#c5a880]">12+</div>
           <div class="text-xs font-mono text-[#c5a880] uppercase tracking-wider mt-1">Years Experience</div>
           <div class="text-[11px] text-zinc-500">Active Practice Since 2013</div>
         </div>
         <div>
-          <div class="font-serif text-3xl sm:text-4xl font-bold text-white">50+</div>
+          <div class="font-display text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#dfc8a5] to-[#c5a880]">50+</div>
           <div class="text-xs font-mono text-[#c5a880] uppercase tracking-wider mt-1">Projects Designed</div>
           <div class="text-[11px] text-zinc-500">Villas, Complexes, Interiors</div>
         </div>
         <div>
-          <div class="font-serif text-3xl sm:text-4xl font-bold text-white">100%</div>
+          <div class="font-display text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#dfc8a5] to-[#c5a880]">100%</div>
           <div class="text-xs font-mono text-[#c5a880] uppercase tracking-wider mt-1">Render to Real</div>
           <div class="text-[11px] text-zinc-500">Uncompromised On-Site Execution</div>
         </div>
         <div>
-          <div class="font-serif text-3xl sm:text-4xl font-bold text-white">6+</div>
+          <div class="font-display text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#dfc8a5] to-[#c5a880]">6+</div>
           <div class="text-xs font-mono text-[#c5a880] uppercase tracking-wider mt-1">Key Metros</div>
           <div class="text-[11px] text-zinc-500">Bhilai, Raipur, Ambikapur, Bhopal</div>
         </div>
